@@ -1,10 +1,15 @@
 package coreLab.core.programmationfonctionnelle.lesinterfacesfonctionnelles;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
 
 	public static void main(String[] args) {
 		
-		testMethodOne();
+		testMethodOne();//affichera le nombre 33 est pair : false
+		
+		exempleStreamAvecInterfaceFonctionnelle();//affichera Alice Alain
 
 	}
 
@@ -22,6 +27,15 @@ public class Main {
 		// fonctionnelle
 		int testNombre = 33;
 		System.out.println("le nombre " + testNombre + " est pair : " + verificateurPair.estPair(testNombre));
+	}
+	
+	static void exempleStreamAvecInterfaceFonctionnelle() {
+		/***
+		 * exemple demo d'utilisation d'interface fonctionnelles sur un stream .
+		 * Dans cet exemple : un Predicat est utilisé pour un filtre et un Consumer pour l'affichage dans la console.
+		 */
+		List<String> names = Arrays.asList("Eline","Alice","Clara","Alain");
+		names.stream().filter(n->n.startsWith("A")).forEach(n->System.out.println(n));
 	}
 
 }

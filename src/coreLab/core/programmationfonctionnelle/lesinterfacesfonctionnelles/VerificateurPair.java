@@ -3,7 +3,7 @@ package coreLab.core.programmationfonctionnelle.lesinterfacesfonctionnelles;
 @FunctionalInterface
 public interface VerificateurPair {
 	/**
-	 * ceci est la méthode abstraite obligatoire
+	 * méthode abstraite obligatoire
 	 * @param nombre
 	 * @return
 	 */
