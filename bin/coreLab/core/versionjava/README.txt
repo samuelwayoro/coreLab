@@ -38,47 +38,76 @@ J2SE 5.0          *	---> For Loop améliorée - Enums - Autoboxing/Unboxing					
 				  *	int b = a;																		*
 				  *																					*
 *************************************************************************************************************************************
-JAVA SE 8 LTS	  *	---> Programmation Fonctionnonelle (Lambda,Stream)-Méthodes statiques dans les	* Mars 2014
-				  *		interfaces.																	*
-				  *																					*
-				  * //Utilisation de stream dans une expression lambda								*
-				  * names.stream().filter(n->n.startsWith("A")).forEach(System.out::println);		*
-				  *
-				  * --->LES METHODE STATIQUES DANS LES INTERFACES :
-				  *      permettant de définir des méthodes d'assistance  réutilisable dans les 
-				  *      interfaces .
-				  *  
-				  *  interface Outil {
-				  *  	static void methodExample(){
-				  *  		//Implémentation de la methode
-				  *  	}
-				  *  }
-				  *
+JAVA SE 8 LTS	  																						Mars 2014
+					---> LES INTERFACES FONCTIONNELLE :
+					     -----------------------------
+						Une interface fonctionnelle est une interface qui possède une seule méthode
+						abstraite . ELle peut avoir plusieurs méthodes par défaut ou plusieurs méthodes
+						statiques . Mais la caractéristique principale est cette méthode abstraite .
+						Elle est généralement annotée @FunctionnalInterface pour signaler au compilateur 
+						de vérifier sa validité . 
+						
+						exemple : 
+						@FunctionalInterface
+						Public interface MyInterface(){
+							void myMethod();
+						}
+
+					---> LES METHODES PAR DEFAUT DANS LES INTERFACES FONCTIONNELLE  :                 	
+						exemple : la méthode sort de l'interface List
+						
+						default void sort(Comparator<? super E> c {
+							Collections.sort(this,c);
+						}
+											
+					---> LA PROGRAMMATION FONCTIONNELLE (Lambda,Stream)																	
+				  																					
+				   		//Utilisation de stream dans une expression lambda								
+				   		names.stream().filter(n->n.startsWith("A")).forEach(System.out::println);		
+				  																					
+				   	--->LES METHODE STATIQUES DANS LES INTERFACES :									
+				          Permettant de définir des méthodes d'assistance  réutilisable dans les 	
+				        interfaces .																
+				    																				
+				         interface Outil {																
+				    	    static void methodExample(){												
+				    		//Implémentation de la methode											
+				    	   }																			
+				         }																				
+				  																					
 ************************************************************************************************************************************
-JAVA 9			  * ---> MODULARISATION (Java Platform Modul System) : servant à mieux structurer 	 * Septembre 2017			   
-				  *	   les applications en modules interconnectées . 								 *
-				  *	   module mon.mondule{															 *	
-				  *	   	requires java.sql;											 				 *
-				  *	   	exports com.monapp.domaine;											 		 *
-				  *	  }											 									 *
-				  *	  											 									 *
-				  *	  NB: LE JDK A ETE REORGANISE EN MODULE 										 *
-				  *	  											 									 *
-				  * ---> l'API STREAM A ETE ETENDU 											 	     *
-				  *	   											 									 *
-				  * ---> METHODES PRIVEE DANS LES INTERFACES:										 *
-				  * 		interface ExempleInterface{											 	 *
-				  *   		 private void methodePrivee(){											 *
-				  *   			//implémentation de la methode 										 *
-				  *   		  }											 							 *
-				  *  	} 											 								 *
-				  *	   											 									 *
+JAVA 9			   	---> MODULARISATION (Java Platform Modul System) : servant à mieux structurer 	    Septembre 2017			   
+				  	   les applications en modules interconnectées . En gros un module est un package 								 
+				  	  qui contient d'autres packages avec un fichier module-info.java a sa racine. 
+				  
+				  	  module mon.mondule{															 	
+				  	   	requires java.sql;											 				 
+				  	   	exports com.monapp.domaine;											 		 
+				  	  }											 									 
+				  	  											 									 
+				  	  NB: LE JDK A ETE REORGANISE EN MODULE AMELIORANT LA GESTION DES DEPENDANCES	
+				  		   DANS LE CLASSPATH													
+				  	  NB: pour utiliser les modules il faut créer un fichier nommer : 
+				  		  module-info.java a la racine du package principale et y mettre toutes les 
+				  		  infos descriptives du module. En somme un
+				  
+				  
+				   															        			 	
+				  	---> l'API STREAM A ETE ETENDU 											 	     
+				  	   											 									 
+				    ---> METHODES PRIVEE DANS LES INTERFACES:										 
+				   		interface ExempleInterface{											 	 
+				     		 private void methodePrivee(){											 
+				     			//implémentation de la methode 										 
+				     		  }											 							 
+				    	} 											 								 
+				  	   											 									 
 **************************************************************************************************************************************				  
-JAVA SE 10		  * ---> INFERENCE DE TYPE LOCALE AVEC : VAR 										 * Mars 2018
-				  *		 Réduis la verbosité du code sans sacrifier la clarté.			             *	
-				  *     
-				 	     //avant java 10 : on spécifie le type de la variable explicitement 
-				 	 List<String>myList = new ArrayList<>();
+JAVA SE 10		  	 ---> INFERENCE DE TYPE LOCALE AVEC : VAR 										    Mars 2018
+				  		 Réduis la verbosité du code sans sacrifier la clarté.			             	
+				       
+				 	    //avant java 10 : on spécifie le type de la variable explicitement 
+				 	 	List<String>myList = new ArrayList<>();
 				 	 
 				 	 	//avec java 10 : on peut utiliser le mot clé 'var' pour demander au 
 				 	 	//compilateur de déduire le type :
@@ -118,7 +147,7 @@ JAVA SE 16			---> Record classes																	Mars 2021
 						 de code possible . 
 ***********************************************************************************************************************************
 JAVA SE 17 			---> Sealed classes :
-						 * les classes scellés servent a avoir un contrôle précis de l'héritage  			Septembre 2021
+						 * les classes scellés servent a avoir un contrôle précis de l'héritage  		Septembre 2021
 						 * utilisation de "sealed" classe X permits listes de classes autorisées à 
 						 étendre la classe X . 
 						 * "sealed" est un mot-clé réservé (un mot clé contextuel)

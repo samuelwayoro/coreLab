@@ -40,5 +40,5 @@ Contient une méthode get() QUI NE PREND AUCUN PARAMETRE et qui renvoie un résu
 Supplier<String> fournisseur = () -> "Exemple";
 
 
-Ces différentes interfaces fonctionnelles sont expliquées dans les moindres détails possible dans les différents sous package portant 
-leur noms . 
+Ces différentes interfaces fonctionnelles sont expliquées dans les moindres détails possible dans les différents 
+sous package portant leur noms . 
