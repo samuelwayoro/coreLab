@@ -1,11 +1,11 @@
 package coreLab.core.genericite;
 
-public class Container<T> {
+public class ExempleOne<T> {
 	T valeur ; //utilisation du type <T> comme type de la propriété valeur 
 	
 	//constructeur 
 	
-	public Container(T defaut) {
+	public ExempleOne(T defaut) {
 		valeur = defaut;
 	}
 	

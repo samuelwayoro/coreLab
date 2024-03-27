@@ -1,15 +1,15 @@
 package coreLab.core.genericite;
 
-public class TestContainer {
+public class TestExampleOne {
 
 	public static void main(String[] args) {
 
 		// utilisation de la classe generique Container
 
 		// instantiation avec le type Integer
-		Container<Integer> cInt = new Container<Integer>(3);
+		ExempleOne<Integer> cInt = new ExempleOne<Integer>(3);
 		// instantiation avec un type String
-		Container<String> cString = new Container<String>("Titi");
+		ExempleOne<String> cString = new ExempleOne<String>("Titi");
 
 		System.out.println("avant :" + cInt.lire() + " et " + cString.lire());
 		cInt.affecter(7);
