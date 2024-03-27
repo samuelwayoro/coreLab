@@ -11,6 +11,29 @@ Elle est annotée avec @FunctionalInterface pour signaler au compilateur de vér
 A chaque fois que nous utilisons une expression lambda ou une référence de méthode , nous implémentons
 en fait une interface fonctionnelle.
 
+L'utilisation d'une interface fonctionnelle dans le code respecte ces trois étapes : 
+
+1- LA DEFINITION :
+	la définition de cette interface fonctionnelle : étape au cours de laquelle le dev écrit une interface 
+	portant ou non l'annotation @FontionnalInterface et comportant oblogatoirement une et une seule méthode abstraite . 
+		 
+2- L'INSTANTIATION :
+	l'instantiation de cette interface fonctionnelle : l'utilisation de l'interface fonctionnelle définie plus haut 
+	à partir d'une instanciation de celle-ci dans une variable. Il s'agit de l'instancier comme on le ferais avec un objet de classe 
+	 MAIS EN PRENANT SOINT DE D'IMPLEMENTER SA METHODE ABSTRAITE : lui donner un logique ...
+	  
+ 3- L'UTILISATION : il s'agit d'utiliser cette instance de l'interface fonctionnelle en faisant un appel a sa methode 
+		  	  autrefois abstraite que nous avons implémenté . 
+	
+	EXEMPLE : utilisation de l'interface fonctionnelle VerificateurPair dans la classe Main
+	
+Afin de mieux profiter de cette nouvelle fonctionnalité dans l'api java , le jdk contient une multitude d'interface fonctionnelle 
+dans le package java.util. 
+Il s'agit des interfaces fonctionnelles de java qui permettre d'améliorer le code en le redant plus succins et de s'affranchir
+des classe anonyme bcps plus verbeux mais seul alternatives dans le code (dans la version 7 de java).	
+Ces interfaces fonctionnelles offrent plusieurs méthodes très utiles sans que nous ne soyons obligé de créer de nouvelles interfaces
+fonctionnelles .   	  
+
 ***************** LES INTERFACES FONCTIONNELLES DE L'API JAVA
 
 l'api java depuis sa version 8 propose des interfaces fonctionnelles facilitant la programmation fonctionnelle : 

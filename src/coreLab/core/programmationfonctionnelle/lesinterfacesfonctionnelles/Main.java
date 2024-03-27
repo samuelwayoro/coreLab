@@ -14,13 +14,22 @@ public class Main {
 	}
 
 	static void testMethodOne() {
-		// Utilisation de l'interface fonctionnelle avec une expression lambda :
-
 		/**
-		 *  ETAPE 1 : instanciation de l'interface fonctionnelle
-		 *  NB : l'instanciation doit se baser sur l'implémentation de la méthode abstraite 
-		 *  de l'interface fonctionnelle en question (dans notre cas un Predicat)
+		 * L'utilisation d'une interface fonctionnelle respecte ces trois étapes : 
+		 * 
+		 * 1- LA DEFINITION :
+		 *  la définition de cette interface fonctionnelle : étape au cours de laquelle le dev écrit une interface 
+		 *  portant ou non l'annotation @FontionnalInterface et comportant oblogatoirement une et une seule méthode abstraite . 
+		 * 
+		 * 2- L'INSTANTIATION :
+		 *    l'instantiation de cette interface fonctionnelle : l'utilisation de l'interface fonctionnelle définie plus haut 
+		 * 	  à partir d'une instanciation de celle-ci. Il s'agit de l'instancier comme on le ferais avec un objet de classe 
+		 * 	  MAIS EN PRENANT SOINT DE D'IMPLEMENTER SA METHODE ABSTRAITE : lui donner un logique ...
+		 * 
+		 * 3- L'UTILISATION : il s'agit d'utiliser cette instance de l'interface fonctionnelle en faisant un appel a sa methode 
+		 * 	  autrefois abstraite que nous avons implémenté . 
 		 */
+
 		VerificateurPair verificateurPair = n -> n % 2 == 0;
 
 		/** ETAPE 2 : appel de la méthode static a partir de l'instance de l'interface fonctionnelle

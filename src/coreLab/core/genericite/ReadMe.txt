@@ -49,7 +49,7 @@ Exemple 2 : La méthode <T> T getElementAleatoire(T[] valeurs) de la classe Test
 Exemple 3 : test sur les méthodes générique des classes CalculGenericMethod et CalculGenericMethodWithProperty dans la classe 
 			TestMethodeGenerique
  
-LES INTERFACE GENERIQUE : 
+LES INTERFACES GENERIQUE : 
 -------------------------
 Dans une projet informatique (comme dans les framework) , souvent on manipule plusieurs interfaces qui ont la même structure 
 mais manipulant des types différents.
