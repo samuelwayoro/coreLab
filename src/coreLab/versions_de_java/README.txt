@@ -139,12 +139,50 @@ JAVA SE 15 			---> LES TEXT BLOCS (En preview dans java 13 et 14)									Septem
 
 ***********************************************************************************************************************************
 JAVA SE 16			---> Record classes																	Mars 2021
-						 Permettant de creer de type de données immuables sans code superflu .
-						 exemple :
-						 	record Person(String name,int age){}
+						 Permettant de creer de type de données immuables sans code superflu .	
+						 Un record est un nouveau type du langage Java qui permet au travers d'une syntaxe très simplifiée
+						 de définir une classe qui encapsule des données de manière immuable.
 						 
-						 nb : les record ont faciliter la création de classe immuable avec le minimum 
-						 de code possible . 
+						 exemple :
+						 	
+						 	public record Person(String name,int age){
+						 	
+						 	}
+						 
+						 NB : les record ont facilité la création de classe immuable avec le minimum 
+						 de code possible . le terme immuable signifi que ses propriétés sont final (donc non modifiable avec un setter).
+						 La compilation du record Person ci dessus permettant de générer une classe java immuable contenant : 
+						 	- des champs finaux : name et age 
+						 	- un constructeur pour initialiser les valeurs de ces champs 
+						 	- des getters 
+						 	- la rédéfinition des méthodes equals() et toString() .
+						 	
+						 Un record hérite de la classe java.lang.Record.
+
+						 Les accesseurs en lecture seule sont des méthodes dont le nom correspond au nom du membre du record. 
+						 Le nom des getters ne respecte pas la convention JavaBean qui recommande de préfixer ces méthodes par get
+						 ou is (pour les valeurs booléennes). Le nom des getters correspond au nom du champ.
+
+						 La redéfinition de la méthode equals() considère deux records comme égaux s'ils sont du même type et si 
+						 tous les champs ont la même valeur.
+
+						 La redéfinition de la méthode toString() retourne une chaîne de caractères qui contient le nom du record 
+						 suivi d'une paire de crochet qui contient les paires nom du champs = valeur séparées par une virgule.
+
+						 Les méthodes sont par défaut générées par le compilateur : il est possible de fournir une redéfinition 
+						 personnalisée au besoin.
+
+						 Il est possible d'ajouter des membres (champs, méthodes et constructeurs) sous certaines conditions et 
+						 restrictions.
+
+						 L'implémentation des records dans le langage est similaire à celui des enums. 
+						 Une enum est aussi une classe est une sémantique spécifique et une syntaxe plus concise. 
+						 Les records sont comme les enums des formes limitées de classes.
+
+						 Comme les records sont des classes, la plupart des fonctionnalités des classes sont conservées.
+						 La possibilité de redéfinir les méthodes générées ou d'ajouter certains membres offre un bon compromis 
+						 entre simplicité et flexibilité.
+						 
 ***********************************************************************************************************************************
 JAVA SE 17 			---> Sealed classes :
 						 * les classes scellés servent a avoir un contrôle précis de l'héritage  		Septembre 2021
