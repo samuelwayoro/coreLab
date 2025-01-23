@@ -6,12 +6,17 @@ public class Main {
 
 		try {
 
-			int dividByZero = 5 / 1;
+			int dividByZero = 5 / 0;
 			System.out.println("resultat de la division  " + dividByZero);
 			System.out.println("instruction suite à la division");
 
 		} catch (ArithmeticException e) {
-			e.printStackTrace();
+			System.out.println("trace de printStackTrace()*** : ");
+			e.printStackTrace();//affiche le printstacktrace en ROUGE :)
+
+			System.out.println("trace de getMessage()***");
+			System.out.println(e.getMessage());
+
 		}finally {
 			System.out.println("instruction dans le finally...");
 		}
