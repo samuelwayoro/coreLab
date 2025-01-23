@@ -71,3 +71,20 @@ Dans les deux cas, il faut les gérer dans les blocs de code : <font color=red> 
           ...
         }
 
+
+### L'INSTRUCTION TRY-WITH-RESOURCES
+
+<b>Syntax: </b>
+
+        try (var Scanner = new Scanner(System.in)){
+            ...
+        }catch (ExceptionName e){
+            e.printStackTrace();
+        }
+
+<font color=red>Les classes "Closables" doivent être obligatoirement fermées explicitement par le développeur pour libérer les ressources
+sous-jacentes qu'elles utilisent</font>. Si elles ne sont pas fermées manuellement, celles-ci sont fermées automatiquement quand le scope dans lequel elles sont définies est résolu (donc à la fin du bloc d'instructions qui les définis).
+
+<font color=red>Scanner implémente Closeable.</font> Nous verrons d'autres exemples de classes l'implémentant dans le chapitre sur les flux d'entrées / sorties. Pour résumer, ce sont des classes travaillant sur des fichiers, des flux, des connexions, ...
+
+L'intérêt de l'instruction try-with-resources utilisée précédemment est de fermer automatiquement les flux définis dans les parenthèses du try. Cela permet d'éviter l'utilisation d'une instruction finally pour fermer les flux. Le code est ainsi plus simple à écrire et moins risqué.
