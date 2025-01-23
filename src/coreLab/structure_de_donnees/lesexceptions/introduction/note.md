@@ -14,37 +14,28 @@ Dans notre programme, l'erreur n'est pas gérée, ce qui provoque un bug dans le
 
 <font color=red> LES TYPES D'ERREURS EN JAVA :</font>
 
-Le diagramme suivant montre comment sont organisées les classes d'erreurs en java : 
-(voir fichier diagramme_erreurs_java.png) 
+Le diagramme suivant montre comment sont organisées les classes d'erreurs en java :
+(voir fichier diagramme_erreurs_java.png).
 
-Nous avons en réalité trois types d'exceptions :
+Tout part à la base de la <font color=red>classe Throwable</font> qui est la <font color=red>classe mère de toutes les
+classes
+d'erreur et d'exception.</font>
+
+Elle contient :
+
+* <font color=red>une propriété "message" avec sa méthode getMessage() : </font> dont bénéficient toutes ses classes
+  filles.
+  Elle permet de connaitre le message d'erreur et de l'afficher avec la méthode getMessage().
 
 
-- <font color=red>la classe Error : </font> 
+* <font color=red>une stack trace :</font> qui signifie pile d'appel en français. Elle permet de lister et afficher
+  toutes les méthodes
+  qui ont été exécutées avant d'aboutir à une Exception, la ligne de l'exception et la méthode qui est à l'origine de
+  cette exception.
+  Elle est <font color=red> récupérable à l'aide de la méthode "printStackTrace()"</font> qui va permettre d'afficher
+  cette stack trace
+  dans la console ou sur un autre support (réseau ou base de données).
+  Très utile pour fair du debug !
 
-Elle représente une erreur grave intervenue dans la machine virtuelle Java ou dans un sous système Java. L'application Java s'arrête instantanément dès l'apparition d'une exception de la classe Error.
 
-<font color=gold>NOTE : </font>
-Il n'y a pas grand-chose à faire pour empêcher ces erreurs dans le code de nos programmes directement. Ce genre d'erreurs 
-peut par exemple arriver quand il y a plus de RAM disponible pour faire fonctionner le programme. Ce sont en fait des 
-erreurs techniques.
-
-- <font color=red>la classe Exception : </font>
-  La classe Exception représente à l'inverse des erreurs liées à l'exécution du programme, donc liées au code que l'on développe. La particularité de ces exceptions, c'est qu'elles doivent obligatoirement être gérées dans le code, 
-sinon : 
-  - soit le code ne peut pas compiler On les appelle <font color=red>checked exception.</font>
-  - soit le code pourra compiler, mais avec une possibilité d'exceptions dans son execution : on les appelle les <font color=red>unchecked exceptions, 
-  et la classe RuntimeException en est une. </font> Ce genre d'exception est une classe fille de la classe Exception. 
-
-Dans les deux cas, il faut les gérer dans les blocs de code : <font color=red> try / catch() / finally.</font>
-
-<b>Syntax:</b>
-
-        try{
-          ...
-        } catch(ExceptioName e){
-          ...
-        } Finally {
-          ...
-        }
-
+* <font color=red> une root cause : </font> qui signifie cause raçine en français, elle permet de connaître l'erreur qui est à l'origine responsable de l'erreur qu'on obtient dans la console.
