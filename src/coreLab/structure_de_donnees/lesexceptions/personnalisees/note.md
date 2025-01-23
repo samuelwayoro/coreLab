@@ -22,3 +22,4 @@ Par convention, on met le mot Exception dans le nom d'une exception personnalis√
             ...
         }
 
+<b>Exemple</b> : voir la classe InvalidException()
