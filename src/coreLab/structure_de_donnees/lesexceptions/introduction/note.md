@@ -12,14 +12,13 @@ Ce programme compile sans problème. Cependant, à l'exécution, on obtient l'er
 C'est ce qu'on appelle une exception. 
 Dans notre programme, l'erreur n'est pas gérée, ce qui provoque un bug dans le programme et provoque l'arrêt du programme. Une exception non gérée est donc un vrai problème qu'il nous faut apprendre à régler.
 
-<font color=red> LES TYPES D'ERREURS EN JAVA :</font>
+<font color=red> LA CLASSE THROWABLE :</font>
 
 Le diagramme suivant montre comment sont organisées les classes d'erreurs en java :
 (voir fichier diagramme_erreurs_java.png).
 
 Tout part à la base de la <font color=red>classe Throwable</font> qui est la <font color=red>classe mère de toutes les
-classes
-d'erreur et d'exception.</font>
+classes d'erreur et d'exception.</font> C'est la classe fondamentale.
 
 Elle contient :
 
@@ -39,3 +38,56 @@ Elle contient :
 
 
 * <font color=red> une root cause : </font> qui signifie cause raçine en français, elle permet de connaître l'erreur qui est à l'origine responsable de l'erreur qu'on obtient dans la console.
+
+
+<font color=red> LES 3 PRINCIPALES CLASSES FILLES DE THROWABLE : les differents type d'erreurs </font>
+
+*   <font color=red>La class Error : </font> 
+
+Elle modélise (représente) les erreurs qui en général ont lieu au niveau de la JVM, au niveau du RUNTIME java.
+
+<b>Exemple :</b> 
+
+* OutOfMemoryError() : Jeté quand la jvm n'a plus de mémoire pour l'application en cours.
+Qui n'est pas a proprement dit une erreur dûe à l'application, qui serait liée à une insuffisance de la JVM qui faudra 
+peut-être "tuneé" ou reconfigurée pour que l'appli puisse continuer correctement.
+
+
+* StackOverFlowError() : Quand on a une méthode qui s'appelle elle-même, alors la stack est saturée.
+
+<font color=gold> NB: </font> 
+Elles ne nécessitent pas une gestion explicite dans un try catch.
+
+*   <font color=red>La class Exception : </font>
+
+
+<b>Exemple :</b>
+
+* <b> IOException() : </b> Jetée quand on a un problème d'entrée sortie typiquement lors d'accès disque ou réseau.
+
+
+* <b> FileNotFoundException() : </b> qui étend IOException() et qui est jétée quand on a un problème de lecture, d'un fichier qui n'est malheureusement pas trouvé.
+
+
+* <b>SQLException() :</b> jetée lors d'erreur de syntax dans une requête sql envoyée à un SGBD via JDBC pour execution. 
+En gros, il s'agit d'une erreur côté base de données remontées à la JVM.
+
+<font color=gold> NB: </font> 
+Elles nécessitent une gestion explicite dans un try catch.
+
+
+*   <font color=red>La class RunTimeException : classe fille d'Exception </font>
+
+Ce sont en vrai des "bugs" c'est-à-dire du traitement qui n'ont pas lieu d'être.
+
+<font color=gold> NB: </font> 
+Elle ne nécessite pas une gestion explicite, mais plutôt une correction de la ligne de code étant à l'origine du bug.
+
+
+Exemple : 
+
+* <b>NullPointerException</b> : appelée couramment NPE 
+* <b>ArrayIndexOutOfBounds</b> : rencontré quand on essai de lire au dela de la limite de la taille d'un tableau.
+* <b>ArithmeticException</b> : lorsqu'on effectue une division d'un entier par 0.
+
+
