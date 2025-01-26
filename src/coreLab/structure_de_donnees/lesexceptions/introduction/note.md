@@ -61,8 +61,39 @@ peut-être "tuneé" ou reconfigurée pour que l'appli puisse continuer correctem
 <font color=gold> NB: </font> 
 Elles ne nécessitent pas une gestion explicite dans un try catch.
 
+
+
+*   <font color=red>La class RunTimeException : classe fille d'Exception </font>
+
+Ce sont en vrai des "bugs" entraîné le plus souvent par une erreur dans le code source qui n'ont pas lieu d'être.
+
+<font color=gold> NB: </font> 
+Elle ne nécessite pas une gestion explicite, mais plutôt une correction de la ligne de code étant à l'origine du bug.
+
+
+Exemple :
+
+* <b>NullPointerException</b> : appelée couramment NPE
+* <b>ArrayIndexOutOfBounds</b> : rencontré quand on essai de lire au dela de la limite de la taille d'un tableau.
+* <b>ArithmeticException</b> : lorsqu'on effectue une division d'un entier par 0.
+
+
+
+
 *   <font color=red>La class Exception : </font>
 
+Exception est une classe de based dans java pour toutes les exceptions vérifiées <b> checked</b>.
+Elle hérite directement de la classe <b>Throwable</b>.
+
+Il s'agit d'une classe générique qui représente toutes les situations exceptionnelles qu'une application peut 
+vouloir gérer.
+
+Elle est destinée à être étendue pour créer des exceptions specifiques, comme : 
+<b>IOException</b>, <b>SQLException</b>, etc ...
+
+<font color=gold> C'est une <b>checked exception</b>, ce qui signifie que le compilateur force le developpeur à la 
+gérer explicitement (via un try-catch ou en la déclarant dans la clause throws).
+On peux l'utiliser pour déclarer ou attraper des exceptions génériques.</font>
 
 <b>Exemple :</b>
 
@@ -75,22 +106,31 @@ Elles ne nécessitent pas une gestion explicite dans un try catch.
 * <b>SQLException() :</b> jetée lors d'erreur de syntax dans une requête sql envoyée à un SGBD via JDBC pour execution. 
 En gros, il s'agit d'une erreur côté base de données remontées à la JVM.
 
-<font color=gold> NB: </font> 
-Elles nécessitent une gestion explicite dans un try catch.
+En général, il y a deux possibilités de gérer les exceptions checked dans le code :  
 
+* Soit en utilisant le mot clé <b>Throws</b> dans la signature de la méthode dans laquelle cette exception pourrait 
+arriver. Dans ce cas, il est demandée au(x) futurs utilisateur(s) de notre méthode de gérer et bien prendre en compte
+cette exception comme le montre le code suivant : 
+  
+      public typeRetoun nomMethod(...) throws nomException {
+        ....
+      }
 
-*   <font color=red>La class RunTimeException : classe fille d'Exception </font>
+* Soit en nous en occupant nous même, c'est-à-dire gérer l'exception localement), dans une encapsulation de l'exception via l'instruction try/catch qui signifie 
+que nous essayons d'exécuter une action, et au cas où une exception arrive nous executerons le bloc de code écris dans 
+la partie <b>catch</b>. 
+     
+      try {
+        ...
+      } catch(NomException e){
 
-Ce sont en vrai des "bugs" entraîné le plus souvent par une erreur dans le code source qui n'ont pas lieu d'être.
+          /**
+          * afficher une de ses instructions
+          */
+      
+          e.printStackTrace() //afficher la stackTrace
 
-<font color=gold> NB: </font> 
-Elle ne nécessite pas une gestion explicite, mais plutôt une correction de la ligne de code étant à l'origine du bug.
+          system.out.println(e.getMessage) // afficher le message d'erreur
 
-
-Exemple : 
-
-* <b>NullPointerException</b> : appelée couramment NPE 
-* <b>ArrayIndexOutOfBounds</b> : rencontré quand on essai de lire au dela de la limite de la taille d'un tableau.
-* <b>ArithmeticException</b> : lorsqu'on effectue une division d'un entier par 0.
-
-
+          e.rootCause() //afficher la root cause , si il y a une root cause
+      }

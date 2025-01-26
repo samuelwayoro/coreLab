@@ -17,7 +17,32 @@ Syntax:
 
 Le "catch" d'une exception permet d'éviter que celle-ci fasse planter le programme.
 
-<font color=red> ORDRE DES CATCH :</font>
+
+<font color=gold> 
+NB: 
+depuis java 7, il est possible de "catcher" plusieurs exceptions en même temps 
+si le traitement est le même au niveau "ces" deux exceptions.C'est le 
+pattern "Multicatch" .
+</font>
+
+* <b>Exemple</b> : Ici, nous catchons à la fois les exceptions : 
+* FileNotFoundException : qui est levée si le fichier à lire n'a pas été trouvé,
+* et NumberFormatException : levée si nous n'arrivons pas à convertir le nombre en question
+  
+        try {
+              String line = readLine();
+              int nombre = Integer.parseInt(line);
+        } catch(FileNotFoundException | NumberFormatException e) {
+            ...
+        }
+
+<br/>
+
+<font color=red> 
+ORDRE DES CATCH :
+</font>
+
+
 Attention à l'ordre des "catch", les exceptions doivent être catchées dans le bon ordre, de plus spécifique à la plus générale.
 
 En effet, le code suivant 
@@ -82,9 +107,15 @@ Dans les deux cas, il faut les gérer dans les blocs de code : <font color=red> 
             e.printStackTrace();
         }
 
-<font color=red>Les classes "Closables" doivent être obligatoirement fermées explicitement par le développeur pour libérer les ressources
-sous-jacentes qu'elles utilisent</font>. Si elles ne sont pas fermées manuellement, celles-ci sont fermées automatiquement quand le scope dans lequel elles sont définies est résolu (donc à la fin du bloc d'instructions qui les définis).
+<font color=red>Les classes "Closables" doivent être obligatoirement fermées explicitement par le développeur pour 
+libérer les ressources sous-jacentes qu'elles utilisent</font>. Si elles ne sont pas fermées manuellement, celles-ci 
+sont fermées automatiquement quand le scope dans lequel elles sont définies est résolu (donc à la fin du bloc d'instructions qui les définis).
 
 <font color=red>Scanner implémente Closeable.</font> Nous verrons d'autres exemples de classes l'implémentant dans le chapitre sur les flux d'entrées / sorties. Pour résumer, ce sont des classes travaillant sur des fichiers, des flux, des connexions, ...
 
-L'intérêt de l'instruction try-with-resources utilisée précédemment est de fermer automatiquement les flux définis dans les parenthèses du try. Cela permet d'éviter l'utilisation d'une instruction finally pour fermer les flux. Le code est ainsi plus simple à écrire et moins risqué.
+L'intérêt de l'instruction try-with-resources utilisée précédemment est de fermer automatiquement les flux définis dans 
+les parenthèses du try. Cela permet d'éviter l'utilisation d'une instruction finally pour fermer les flux. Le code est 
+ainsi plus simple à écrire et moins risqué.
+
+- <font color=red>Ne Jamais mettre de return dans un bloc catch ou finally : </font>
+voir exemple dans la Quizz.java

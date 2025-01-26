@@ -12,10 +12,13 @@ public class Main {
 
 		} catch (ArithmeticException e) {
 			System.out.println("trace de printStackTrace()*** : ");
-			e.printStackTrace();//affiche le printstacktrace en ROUGE :)
+			//e.printStackTrace();//affiche le printstacktrace en ROUGE :)
 
-			System.out.println("trace de getMessage()***");
-			System.out.println(e.getMessage());
+            //affichage de l'exception jetée en rouge
+            //throw new ArithmeticException();
+
+			//System.out.println("trace de getMessage()***");
+			//System.out.println(e.getMessage());
 
 		}finally {
 			System.out.println("instruction dans le finally...");

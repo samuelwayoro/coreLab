@@ -17,7 +17,32 @@ Syntax:
 
 Le "catch" d'une exception permet d'éviter que celle-ci fasse planter le programme.
 
-<font color=red> ORDRE DES CATCH :</font>
+
+<font color=gold> 
+NB: 
+depuis java 7, il est possible de "catcher" plusieurs exceptions en même temps 
+si le traitement est le même au niveau "ces" deux exceptions.C'est le 
+pattern "Multicatch" .
+</font>
+
+* <b>Exemple</b> : Ici, nous catchons à la fois les exceptions : 
+* FileNotFoundException : qui est levée si le fichier à lire n'a pas été trouvé,
+* et NumberFormatException : levée si nous n'arrivons pas à convertir le nombre en question
+  
+        try {
+              String line = readLine();
+              int nombre = Integer.parseInt(line);
+        } catch(FileNotFoundException | NumberFormatException e) {
+            ...
+        }
+
+<br/>
+
+<font color=red> 
+ORDRE DES CATCH :
+</font>
+
+
 Attention à l'ordre des "catch", les exceptions doivent être catchées dans le bon ordre, de plus spécifique à la plus générale.
 
 En effet, le code suivant 

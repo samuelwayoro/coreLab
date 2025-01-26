@@ -6,8 +6,6 @@ package coreLab.structure_de_donnees.lesexceptions.personnalisees;
 
 public class InvalidException extends Exception {
 
-    private static final long serialVersionUID = 1L;
-
     public InvalidException(String message) {
         super(message);
     }
