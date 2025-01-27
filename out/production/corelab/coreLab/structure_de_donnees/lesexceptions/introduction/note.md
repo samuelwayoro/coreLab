@@ -63,34 +63,39 @@ Elles ne nécessitent pas une gestion explicite dans un try catch.
 
 *   <font color=red>La class Exception : </font>
 
+<font color=gold> Ce sont des CHECKED EXCEPTIONS, des exceptions qui indiquent des erreurs prévisibles et récupérables, 
+comme des problèmes de fichiers, de bases de données ou de ressources manquantes. Elles obligent le développeur à les gérer explicitement
+par le biais de try catch .
+</font>
 
 <b>Exemple :</b>
 
-* <b> IOException() : </b> Jetée quand on a un problème d'entrée sortie typiquement lors d'accès disque ou réseau.
+* <b><font color=red> IOException() :</font> </b> Jetée quand on a un problème d'entrée sortie typiquement lors d'accès disque ou réseau.
 
 
-* <b> FileNotFoundException() : </b> qui étend <b>IOException()</b> et qui est jétée quand on a un problème de lecture, d'un fichier qui n'est malheureusement pas trouvé.
+* <b><font color=red> FileNotFoundException() :</font> </b> qui étend <b>IOException()</b> et qui est jétée quand on a un problème de lecture, d'un fichier qui n'est malheureusement pas trouvé.
 
 
-* <b>SQLException() :</b> jetée lors d'erreur de syntax dans une requête sql envoyée à un SGBD via JDBC pour execution. 
+* <b><font color=red>SQLException() :</font></b> jetée lors d'erreur de syntax dans une requête sql envoyée à un SGBD via JDBC pour execution. 
 En gros, il s'agit d'une erreur côté base de données remontées à la JVM.
 
-<font color=gold> NB: </font> 
-Elles nécessitent une gestion explicite dans un try catch.
 
 
 *   <font color=red>La class RunTimeException : classe fille d'Exception </font>
 
 Ce sont en vrai des "bugs" entraîné le plus souvent par une erreur dans le code source qui n'ont pas lieu d'être.
 
-<font color=gold> NB: </font> 
-Elle ne nécessite pas une gestion explicite, mais plutôt une correction de la ligne de code étant à l'origine du bug.
+<font color=gold> 
+Ce sont des UNCHECKED EXCEPTIONS.
+C'est-à-dire qu'elle ne nécessite pas une gestion 
+explicite dans un try-catch, mais plutôt une correction de la ligne de code étant à l'origine du bug.
 
+</font> 
 
 Exemple : 
 
-* <b>NullPointerException</b> : appelée couramment NPE 
-* <b>ArrayIndexOutOfBounds</b> : rencontré quand on essai de lire au dela de la limite de la taille d'un tableau.
-* <b>ArithmeticException</b> : lorsqu'on effectue une division d'un entier par 0.
+* <b><font color=red>NullPointerException</font></b> : appelée couramment NPE 
+* <b><font color=red>ArrayIndexOutOfBounds</font></b> : rencontré quand on essai de lire au dela de la limite de la taille d'un tableau.
+* <b><font color=red>ArithmeticException</font></b> : lorsqu'on effectue une division d'un entier par 0.
 
 
