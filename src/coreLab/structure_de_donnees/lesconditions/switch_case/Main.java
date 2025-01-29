@@ -1,7 +1,5 @@
 package coreLab.structure_de_donnees.lesconditions.switch_case;
 
-import java.util.Random;
-
 public class Main {
 
 	public static void main(String[] args) {

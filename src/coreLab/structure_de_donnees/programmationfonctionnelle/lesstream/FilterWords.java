@@ -1,7 +1,6 @@
 package coreLab.structure_de_donnees.programmationfonctionnelle.lesstream;
 
 import java.util.Arrays;
-import java.util.stream.Stream;
 
 public class FilterWords {
 

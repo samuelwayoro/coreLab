@@ -1,26 +1,32 @@
 package coreLab.structure_de_donnees.lesexceptions;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class Main {
 
-	public static void main(String[] args) {
+    private static final Logger logger = LogManager.getLogger(Main.class);
 
-		try {
+    public static void main(String[] args) {
 
-			int dividByZero = 5 / 0;
-			System.out.println("resultat de la division  " + dividByZero);
-			System.out.println("instruction suite à la division");
+        logger.info("*** program start **** ");
 
-		} catch (ArithmeticException e) {
-			System.out.println("trace de printStackTrace()*** : ");
-			e.printStackTrace();//affiche le printstacktrace en ROUGE :)
+        try {
+            int dividByZero = 5 / 0;
+            logger.info("division result ");
+            logger.info("fin de la division...");
 
-			System.out.println("trace de getMessage()***");
-			System.out.println(e.getMessage());
-
-		}finally {
-			System.out.println("instruction dans le finally...");
-		}
-		System.out.println("suite du programme...");
-	}
+        } catch (ArithmeticException e) {
+            logger.debug("trace de la printStackTrace() *** ");
+            // e.printStackTrace();//affiche le printstacktrace en ROUGE :)
+            logger.debug("trace de getMessage() de l'objet exception ");
+            logger.error(e.getMessage());
+        } finally {
+            logger.warn("Ceci est une mise en garde");
+            logger.debug("instruction dans le bloc finally");
+            logger.info("L'application est terminée.");
+        }
+        logger.debug("*** program end *** ");
+    }
 
 }

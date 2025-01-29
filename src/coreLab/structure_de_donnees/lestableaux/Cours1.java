@@ -1,7 +1,5 @@
 package coreLab.structure_de_donnees.lestableaux;
 
-import java.util.Iterator;
-
 public class Cours1 {
 
 	public static void main(String[] args) {

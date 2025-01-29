@@ -1,7 +1,6 @@
 package coreLab.structure_de_donnees.genericite;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class TestExampleTwo {
 

@@ -1,8 +1,8 @@
 package coreLab.structure_de_donnees.programmationfonctionnelle.lesinterfacesfonctionnelles.consumer;
 
-import java.util.function.Consumer;
-
 import coreLab.structure_de_donnees.programmationfonctionnelle.lesinterfacesfonctionnelles.consumer.model.Fichier;
+
+import java.util.function.Consumer;
 
 public class MainConsumer {
 

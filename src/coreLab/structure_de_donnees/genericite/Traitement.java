@@ -1,7 +1,5 @@
 package coreLab.structure_de_donnees.genericite;
 
-import java.io.Serializable;
-
 /**
  * la classe traitement est une classe générique
  * mais qui n'utilise pas n'importe qu'elle type parametré 
