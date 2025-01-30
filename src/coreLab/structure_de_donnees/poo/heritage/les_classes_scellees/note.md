@@ -43,33 +43,45 @@ permits.Cependant pour des raisons de lisibilités et de maintenabilité, il est
     
       String nom;
 
-      Animal(String nom) { this.nom = nom; }
+      Animal(String nom) {
+        this.nom = nom; 
+      }
     
     }
 
     // premiere classe Chien 
     final class Chien extends Animal {
-    Chien(String nom) { super(nom); }
+        Chien(String nom) { 
+          super(nom); 
+        }
     }
     
     //deuxieme classe Chat
     final class Chat extends Animal {
-    Chat(String nom) { super(nom); }
+      Chat(String nom) { 
+        super(nom); 
+      }
     }
     
     //troisieme classe Oiseau
     final class Oiseau extends Animal {
-    Oiseau(String nom) { super(nom); }
+      Oiseau(String nom) { 
+        super(nom); 
+      }
     }
 
     //quatrième classe Poisson    
     final class Poisson extends Animal {
-    Poisson(String nom) { super(nom); }
+        Poisson(String nom) { 
+          super(nom); 
+        }
     }
     
     //Cinquième classe Serpent 
     final class Serpent extends Animal {
-    Serpent(String nom) { super(nom); }
+        Serpent(String nom) { 
+          super(nom); 
+        }
     }
 
 
@@ -144,5 +156,5 @@ Les classes scellées sont très utiles et faciles d'utilisation avec <b>switch 
 * Sécurise l'héritage 
 * Optimise la gestion des types 
 * Améliore la lisibilité et maintenabilité du code.
-Les classes scellés sont particulièrement utiles pour représenter des modèles de données fixes, 
-comme des <b>hiérarchies bien définies</b> (Animal,Figure géométrique, Etat d'une machine).
+Les classes scellées sont particulièrement utiles pour représenter des modèles de données fixes, 
+comme des <b>hiérarchies bien définies</b> (Animal, Figure géométrique, Etat d'une machine).
