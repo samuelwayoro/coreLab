@@ -111,7 +111,7 @@ Dans cet exemple :
 
 <font color=red> CONFIGURATION AVANCEE POSSIBLE :  </font>
 
-Il est possible d'ajouter un file appender pour enregistrer les logs dans un fichier.
+🚀 Il est possible d'ajouter un file appender pour enregistrer les logs dans un fichier.
 
 <b>Exemple :</b> 
 
@@ -136,7 +136,7 @@ Il est possible d'ajouter un file appender pour enregistrer les logs dans un fic
     appender.file.layout.type = PatternLayout
     appender.file.layout.pattern = %d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n
 
-Il est possible de configurer des loggers pour des classes ou des packages spécifiques.
+🚀 Il est possible de configurer des loggers pour des classes ou des packages spécifiques.
 
 <b>Exemple : </b> 
 
@@ -172,6 +172,8 @@ Dans cet exemple :
 * Les logs pour la classe ou <b>le package com.example ont un niveau DEBUG</b>.
 * Le logger com.example n'utilise que l'appender console.
 
+🚀 Il est également possible de configurer le format des messages à afficher.
+À voir sur la documentation officielle.
 
 🔥 <font color=red> 3- Utilisez l'instance de Log4j 2 dans les classes </font>
 
@@ -199,7 +201,6 @@ cible du message avec les Appenders.
 
 <b> la méthode error()</b> n'est pas la seule méthode disponible dans la classe Logger. Il est possible d'utiliser différentes
 méthodes qui correspondent toutes à un niveau de sévérité différent : 
-
 
 <font color=gold><b>logger.fatal("message d'erreur fatal");</b></font>
 
