@@ -112,9 +112,106 @@ Ajouter la dépendance suivante dans le build.gradle :
 * Depuis la classe dont on veut créer une classe de test, faire : Ctrl+Shift+T, une fenêtre s'ouvre en donnant la main sur 
 la création de sa classe de tests en ayant la possibilité de sélectionner les méthodes à tester.
 
-En programmation, le test unitaire est un procédé permettant de s'assurer du fonctionnement correct d'une partie déterminée
+🚀 En programmation, le test unitaire est un procédé permettant de s'assurer du fonctionnement correct d'une partie déterminée
 d'un logiciel ou d'une portion d'un programme.
 
 Pour les exemples, nous écrirons des tests unitaires sur des méthodes simples qui n'ont pas d'interactions avec d'autres classes
 (classe MailVerifier, classe Calculator, classe Addition).
+
+<b> Exemple:</b> voir la classe de test <b>MailVerifierTest()</b>. 
+Elle contient <b>un ensemble de cas de test permettant d'écarter toutes les erreurs qui pourrais arriver lors de l'utilisation 
+de cette méthode.</b>
+
+</br>
+
+<font color=red> <b>NB : </b> </font>
+Comme on peut le voir les noms des méthodes de test doivent être évocateurs, et stipuler l'erreur que l'on voudrait
+"écarter" dans l'utilisation courante la méthode.
+
+Il est important de donner des noms de tests clairs suivant le standard suivant : 
+
+<b><font color=gold> Nommenclature : </font></b> 
+<b>nomMethod_Should_resultatAttendu_when_conditionDuTest()</b>
+
+
+<b><font color=red> Exemple : </font> isMail_should_return_false_when_at_is_missing()</b></br>
+Permet de tester si la méthode isMail de la classe MailVerifier() retourne "false" quand le mail saisi par l'utilisateur 
+ne contient pas le caractère @ (appelé at en anglais).
+
+🎁 <b> NOTE :</b> <font color=red> Si les tests sont difficiles à écrire, il est probablement nécessaire de REFACTORISER LE CODE DE PRODUCTION. 
+Souvent, IL EST NECESSAIRE DE DECOUPER DES GROS BLOCS DE CODES EN PLUS PETITES FONCTIONS AFIN DE SEPARER LES RESPONSABILITES.
+Les tests automatisés aident à améliorer la qualité du code quand ils sont bien pensés.</font> 
+
+Grâce à la librairie <b>assertj</b>, on voit également autour des résultats des méthodes sont faciles à lire, cela ressemble à des 
+phrases du langage courant.
+
+🔥 <font color=red><b>IMPORTANT : </b></font> 
+
+Il faut essayer de COUVRIR LA PLUPART DES CAS DE TESTS AUTOUR DES DIFFERENTES METHODES 
+afin d'identifier plus facilement n'importe quel changement dans le code qui pourrait amener un changement cassant. 
+Pour mieux s'y prendre, il est conseillé de TROUVER DES CAS DE TESTS TORDUS QUI FONT PLANTER LA METHODE POUR LAQUELLE ON ECRIT
+LE TESTE, ET CORRIGER LA METHODE POUR LA RENDRE PLUS ROBUSTE SI POSSIBLE. 
+
+
+<b><font color=green> 4. Les méthodes "setup" et "teardown" </font></b>
+
+Il est possible de définir dans les classes de tests des méthodes qui sont exécutées AVANT ou APRES les tests. Dans la plupart
+des frameworks de tests, on parle des méthodes <font color=red> "setup" et "teardown". </font>
+
+🔥 <font color=red><b> @BeforAll</b></font>
+
+La méthode suivante dans nos classes de tests nous permet <font color=red>d'exécuter du code avant toutes les méthodes 
+de tests. Elle ne se lance donc qu'une seule fois au lancement d'un ou plusieurs tests.</font>
+
+Voici le code pour définir une méthode @BeforAll
+
+    @BeforAll
+    static void beforAll(){
+        System.out.printLn("Se lance une seule fois au tout début de l'exécution");
+    }
+
+🔥 <font color=red><b> @BeforEach </b></font>
+
+Elle permet <font color=red> d'exécuter du code avant chaque méthode de test. Elle se lance donc avant chaque test,donc 
+avant chaque méthode annotée avec @Test</font>.
+
+Code de définition : 
+
+    @BeforEach
+    void beforEach(){
+        System.out.println("se lance à chaque fois , avant chaque méthodes annotée @Test);
+    }
+
+
+🔥 <font color=red><b>@AfterAll</b></font>
+
+Permet <font color=red>d'exécuter du code après toutes les méthodes de tests. Elle ne se lance donc qu'une seule fois 
+une fois que tous les tests ont fini d'être exécutés.</font>
+
+Code de définition : 
+
+    @BeforAll
+    static void beforAll(){
+        System.out.printLn("se lance une fois tout à la fin de l'exécution");
+    }
+
+🔥 <font color=red> <b>@AfterEach</b></font>
+
+Permet <font color=red>d'exécuter du code après chaque méthode de test. Elle se lance donc après chaque test.</font>
+
+Code de définition : 
+
+    void afterEach(){
+        System.out.printLn("se lance après chaque méthode annotée @Test");
+    }
+
+📣 <b> IMPORTANT</b> : Ce genre de méthode ont plusieurs utilités potentielles :
+* Ajouter des données dans une base de données qui sont nécessaires pour la bonne exécution des tests.
+* Supprimer des données dans une base de données après l'exécution de tests.
+* Réinitialiser des objets entre les tests pour éviter des effets de bords.
+* Changer des configurations spécifiques à certains outils avant les tests.
+
+Cette liste n'est pas exhaustive, les méthodes de setup et teardown sont utiles dès lors que l'on doit exécuter du code 
+en dehors des tests.
+
 

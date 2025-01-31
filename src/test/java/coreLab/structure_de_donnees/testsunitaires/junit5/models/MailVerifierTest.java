@@ -1,6 +1,6 @@
 package coreLab.structure_de_donnees.testsunitaires.junit5.models;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -11,6 +11,39 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 
 class MailVerifierTest {
+
+
+    /**
+     * Rajout des méthodes "setup" beforAll() et beforEach() :
+     * ensemble de méthodes s'exécutant avant les méthodes de test.
+     */
+
+    @BeforeAll
+    static void beforAll() {
+        System.out.println("*** Avant tout les test ***");
+    }
+
+    @BeforeEach
+    void beforEach() {
+
+        System.out.println("--- Avant chaque tests ---");
+    }
+
+    /**
+     * Rajout des méthodes "tearDown" afterAll() et afterEach() :
+     * ensemble de méthodes s'exécutant après exécution des tests
+     */
+
+    @AfterAll
+    static void afterAll() {
+        System.out.println("+++ Après tout les tests +++ ");
+    }
+
+    @AfterEach
+    void afterEach() {
+        System.out.println("/// après chaque tests ///");
+    }
+
 
     @Test
     void isMail_should_return_true() {

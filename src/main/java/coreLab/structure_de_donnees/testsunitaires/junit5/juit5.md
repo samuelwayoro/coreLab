@@ -151,3 +151,67 @@ Il faut essayer de COUVRIR LA PLUPART DES CAS DE TESTS AUTOUR DES DIFFERENTES ME
 afin d'identifier plus facilement n'importe quel changement dans le code qui pourrait amener un changement cassant. 
 Pour mieux s'y prendre, il est conseillé de TROUVER DES CAS DE TESTS TORDUS QUI FONT PLANTER LA METHODE POUR LAQUELLE ON ECRIT
 LE TESTE, ET CORRIGER LA METHODE POUR LA RENDRE PLUS ROBUSTE SI POSSIBLE. 
+
+
+<b><font color=green> 4. Les méthodes "setup" et "teardown" </font></b>
+
+Il est possible de définir dans les classes de tests des méthodes qui sont exécutées AVANT ou APRES les tests. Dans la plupart
+des frameworks de tests, on parle des méthodes <font color=red> "setup" et "teardown". </font>
+
+🔥 <font color=red><b> @BeforAll</b></font>
+
+La méthode suivante dans nos classes de tests nous permet <font color=red>d'exécuter du code avant toutes les méthodes 
+de tests. Elle ne se lance donc qu'une seule fois au lancement d'un ou plusieurs tests.</font>
+
+Voici le code pour définir une méthode @BeforAll
+
+    @BeforAll
+    static void beforAll(){
+        System.out.printLn("Se lance une seule fois au tout début de l'exécution");
+    }
+
+🔥 <font color=red><b> @BeforEach </b></font>
+
+Elle permet <font color=red> d'exécuter du code avant chaque méthode de test. Elle se lance donc avant chaque test,donc 
+avant chaque méthode annotée avec @Test</font>.
+
+Code de définition : 
+
+    @BeforEach
+    void beforEach(){
+        System.out.println("se lance à chaque fois , avant chaque méthodes annotée @Test);
+    }
+
+
+🔥 <font color=red><b>@AfterAll</b></font>
+
+Permet <font color=red>d'exécuter du code après toutes les méthodes de tests. Elle ne se lance donc qu'une seule fois 
+une fois que tous les tests ont fini d'être exécutés.</font>
+
+Code de définition : 
+
+    @BeforAll
+    static void beforAll(){
+        System.out.printLn("se lance une fois tout à la fin de l'exécution");
+    }
+
+🔥 <font color=red> <b>@AfterEach</b></font>
+
+Permet <font color=red>d'exécuter du code après chaque méthode de test. Elle se lance donc après chaque test.</font>
+
+Code de définition : 
+
+    void afterEach(){
+        System.out.printLn("se lance après chaque méthode annotée @Test");
+    }
+
+📣 <b> IMPORTANT</b> : Ce genre de méthode ont plusieurs utilités potentielles :
+* Ajouter des données dans une base de données qui sont nécessaires pour la bonne exécution des tests.
+* Supprimer des données dans une base de données après l'exécution de tests.
+* Réinitialiser des objets entre les tests pour éviter des effets de bords.
+* Changer des configurations spécifiques à certains outils avant les tests.
+
+Cette liste n'est pas exhaustive, les méthodes de setup et teardown sont utiles dès lors que l'on doit exécuter du code 
+en dehors des tests.
+
+
