@@ -111,3 +111,10 @@ Ajouter la dépendance suivante dans le build.gradle :
 
 * Depuis la classe dont on veut créer une classe de test, faire : Ctrl+Shift+T, une fenêtre s'ouvre en donnant la main sur 
 la création de sa classe de tests en ayant la possibilité de sélectionner les méthodes à tester.
+
+En programmation, le test unitaire est un procédé permettant de s'assurer du fonctionnement correct d'une partie déterminée
+d'un logiciel ou d'une portion d'un programme.
+
+Pour les exemples, nous écrirons des tests unitaires sur des méthodes simples qui n'ont pas d'interactions avec d'autres classes
+(classe MailVerifier, classe Calculator, classe Addition).
+

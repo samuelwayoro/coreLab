@@ -111,3 +111,43 @@ Ajouter la dépendance suivante dans le build.gradle :
 
 * Depuis la classe dont on veut créer une classe de test, faire : Ctrl+Shift+T, une fenêtre s'ouvre en donnant la main sur 
 la création de sa classe de tests en ayant la possibilité de sélectionner les méthodes à tester.
+
+🚀 En programmation, le test unitaire est un procédé permettant de s'assurer du fonctionnement correct d'une partie déterminée
+d'un logiciel ou d'une portion d'un programme.
+
+Pour les exemples, nous écrirons des tests unitaires sur des méthodes simples qui n'ont pas d'interactions avec d'autres classes
+(classe MailVerifier, classe Calculator, classe Addition).
+
+<b> Exemple:</b> voir la classe de test <b>MailVerifierTest()</b>. 
+Elle contient <b>un ensemble de cas de test permettant d'écarter toutes les erreurs qui pourrais arriver lors de l'utilisation 
+de cette méthode.</b>
+
+</br>
+
+<font color=red> <b>NB : </b> </font>
+Comme on peut le voir les noms des méthodes de test doivent être évocateurs, et stipuler l'erreur que l'on voudrait
+"écarter" dans l'utilisation courante la méthode.
+
+Il est important de donner des noms de tests clairs suivant le standard suivant : 
+
+<b><font color=gold> Nommenclature : </font></b> 
+<b>nomMethod_Should_resultatAttendu_when_conditionDuTest()</b>
+
+
+<b><font color=red> Exemple : </font> isMail_should_return_false_when_at_is_missing()</b></br>
+Permet de tester si la méthode isMail de la classe MailVerifier() retourne "false" quand le mail saisi par l'utilisateur 
+ne contient pas le caractère @ (appelé at en anglais).
+
+🎁 <b> NOTE :</b> <font color=red> Si les tests sont difficiles à écrire, il est probablement nécessaire de REFACTORISER LE CODE DE PRODUCTION. 
+Souvent, IL EST NECESSAIRE DE DECOUPER DES GROS BLOCS DE CODES EN PLUS PETITES FONCTIONS AFIN DE SEPARER LES RESPONSABILITES.
+Les tests automatisés aident à améliorer la qualité du code quand ils sont bien pensés.</font> 
+
+Grâce à la librairie <b>assertj</b>, on voit également autour des résultats des méthodes sont faciles à lire, cela ressemble à des 
+phrases du langage courant.
+
+🔥 <font color=red><b>IMPORTANT : </b></font> 
+
+Il faut essayer de COUVRIR LA PLUPART DES CAS DE TESTS AUTOUR DES DIFFERENTES METHODES 
+afin d'identifier plus facilement n'importe quel changement dans le code qui pourrait amener un changement cassant. 
+Pour mieux s'y prendre, il est conseillé de TROUVER DES CAS DE TESTS TORDUS QUI FONT PLANTER LA METHODE POUR LAQUELLE ON ECRIT
+LE TESTE, ET CORRIGER LA METHODE POUR LA RENDRE PLUS ROBUSTE SI POSSIBLE. 
