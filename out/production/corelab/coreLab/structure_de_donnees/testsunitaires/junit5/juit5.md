@@ -138,9 +138,10 @@ Il est important de donner des noms de tests clairs suivant le standard suivant 
 Permet de tester si la méthode isMail de la classe MailVerifier() retourne "false" quand le mail saisi par l'utilisateur 
 ne contient pas le caractère @ (appelé at en anglais).
 
-🎁 <b> NOTE :</b> <font color=red> Si les tests sont difficiles à écrire, il est probablement nécessaire de REFACTORISER LE CODE DE PRODUCTION. 
-Souvent, IL EST NECESSAIRE DE DECOUPER DES GROS BLOCS DE CODES EN PLUS PETITES FONCTIONS AFIN DE SEPARER LES RESPONSABILITES.
-Les tests automatisés aident à améliorer la qualité du code quand ils sont bien pensés.</font> 
+🎁 <b> NOTE :</b> <font color=red> Si les tests sont difficiles à écrire, il est probablement nécessaire de REFACTORER 
+LE CODE DE PRODUCTION. 
+Souvent, IL EST NECESSAIRE DE DECOUPER DES GROS BLOCS DE CODES EN PLUS PETITES FONCTIONS AFIN DE SEPARER 
+LES RESPONSABILITES. Les tests automatisés aident à améliorer la qualité du code quand ils sont bien pensés.</font> 
 
 Grâce à la librairie <b>assertj</b>, on voit également autour des résultats des méthodes sont faciles à lire, cela ressemble à des 
 phrases du langage courant.
