@@ -1,7 +1,7 @@
 #### <font color=red> LES SETS  </font>
 
-Un Set est une classe d'implémentation de l'interface Set.<font color=red> 
-Elles permettent de stocker, des données non ordonnées d'un type données,
+Un Set est une classe d'implémentation de l'interface Set.
+<font color=red>Elles permettent de stocker, des données non ordonnées d'un type données,
 MAIS CONTRAIREMENT AUX LISTES NE PEUVENT PAS STOCKER DES VALEURS EN DOUBLE.</font>
 
 🔥 <b>Particularités:</b>
@@ -29,7 +29,7 @@ Cette interface comprend 3 implémentations :
 
 * Les <font color=gold> TreeSet </font> : <font color=red> Implémentation de SortedSet lui-même implémentation de Set): 
 Permet de trier dans l'ordre croissant des données.</font> 
-En gros un TreeSet est un ensemble trié de données . 
+En gros un TreeSet est un ensemble trié de données. 
 
 
 <font color=red>NB :</font> Pour l'utilisation d'objets d'une classe dans un TreeSet il faudrais
