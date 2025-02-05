@@ -5,17 +5,16 @@
 NavigableSet est une extension de SortedSet qui <font color=red> offre des méthodes avancées dans un ensemble trié. Il est principalement 
 implémenté par TreeSet</font>.
 
-🚀 <b> Pourquoi utiliser NavigableSet ? </b>
-
-✅ Recherche des éléments proches : lower(),floor(),ceiling(),higher())
-
-✅ Suppression facile des éléments extrêmes (pollFirst(),pollLast()).
-
-✅ Accès à une vue triée à l'envers (descending()).
-
-✅ Sous-ensemble flexible avec inclusion/exclusion (subSet(),headSet(),tailSet()).
-
 
 * Exemple : voir DemoNavigableSet.java
 
+#### 🎯 <font color=red>Quand utiliser <i>NavigableSet</i> au lieu de <i>SortedSet</i> ?</font> 
+
+✅ Pour récupérer rapidement des éléments proches d'un élément donné dans la collection <i>(.lower();.higher();etc)</i>
+
+✅ Pour supprimer et récupérer les premiers/derniers éléments <i>(.poolFirst(),.pollLast())</i>.
+
+✅ Pour afficher une "vue" dans l'ordre inversé des éléments : <i>.descendingSet()</i> 
+
+✅ pour avoir plus de contrôle sur les sous-ensembles avec inclusive/exclusive : <i>subSet()</i>.
 

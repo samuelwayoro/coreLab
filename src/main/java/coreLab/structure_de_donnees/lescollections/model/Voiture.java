@@ -1,4 +1,4 @@
-package coreLab.structure_de_donnees.lescollections;
+package coreLab.structure_de_donnees.lescollections.model;
 
 public class Voiture {
 
