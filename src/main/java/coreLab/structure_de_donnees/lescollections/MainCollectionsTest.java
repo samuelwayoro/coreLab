@@ -17,6 +17,7 @@ public class MainCollectionsTest {
 					// de SortedSet = implementation de Set)
 		st.add(20);
 
+
 		for (Integer i : st) {
 			System.out.println(i);
 		}
@@ -73,7 +74,7 @@ public class MainCollectionsTest {
 		 * apprendre a trier sur une map : le trie d'ordre s'opère tjrs sur les clés de
 		 * façon croissante... dans notre cas de façon croissante car la clé implémente
 		 * l'interface Comparable ET que nous utilisons l'implémentation de TreeMap
-		 */
+
 
 		System.out.println("***********UTILISATION DES MAPS*****************");
 		Map<Carre, Voiture> map = new TreeMap<>();
@@ -85,5 +86,6 @@ public class MainCollectionsTest {
 		for (Map.Entry<Carre, Voiture> myEntry : map.entrySet()) {
 			System.out.println("clé:  " + myEntry.getKey().getCote() + "   valeur:" + myEntry.getValue().getMarque());
 		}
+		 */
 	}
 }
