@@ -1,4 +1,4 @@
-package coreLab.structure_de_donnees.lesmap;
+package coreLab.structure_de_donnees.lescollections.lesmap;
 
 import java.util.Collection;
 import java.util.HashMap;

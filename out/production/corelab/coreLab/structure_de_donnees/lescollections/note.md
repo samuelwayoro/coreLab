@@ -7,6 +7,16 @@ de manière efficace.
 Elle fait partie du framework Java <i>Collections(java.util.Collection)</i> et offre différentes structures adaptées
 aux besoins (List,Set,Queue,etc).
 
+Les collections simplifient la gestion des données et offrent des performances optimisées. Pour en tirer parti il faut 
+choisir une structure adaptée au besoin (performance,tri,accès rapide).
+
+#### 🎯 <font color=red>Quand utiliser une collection : </font>
+
+* Pour gérer un ensemble d'objets sans taille fixe.
+* Pour parcourir, filtrer et manipuler facilement des données 
+
+
+
 #### 🔥 <font color=red> Caractéristiques des collections </font>
 
 ✅ <font color=red>Stockage dynamique</font> : taille ajustable dynamiquement

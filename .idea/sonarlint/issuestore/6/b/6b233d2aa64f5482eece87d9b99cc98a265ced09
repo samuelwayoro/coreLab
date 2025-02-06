@@ -1,0 +1,17 @@
+
+o
+java:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(¿Éâ¯
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÝÂˆ„
+P
+java:S1854@":Remove this useless assignment to local variable "values".(Ñ±ªå
+U
+java:S1854?":Remove this useless assignment to local variable "keySet".(©žý±ûÿÿÿÿ
+=
+java:S22013"'The return value of "get" must be used.(ë´¸¦
+F
+java:S1481?"+Remove this unused "keySet" local variable.(©žý±ûÿÿÿÿ
+A
+java:S1481@"+Remove this unused "values" local variable.(Ñ±ªå
+[
+java:S1612G"@Replace this lambda with method reference 'System.out::println'.(Ðš™Çýÿÿÿÿ
+E	java:S106G"+Replace this use of System.out by a logger.(Ðš™Çýÿÿÿÿ
