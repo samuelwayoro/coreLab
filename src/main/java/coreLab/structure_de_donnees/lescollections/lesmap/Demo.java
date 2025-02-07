@@ -29,5 +29,32 @@ public class Demo {
         for (Map.Entry<String, Integer> entry : ageMap.entrySet()) {
             logger.debug("clé : {}  valeur : {}", entry.getKey(), entry.getValue());
         }
+
+        /***
+         * exemple avec une deuxième Map (table de hachage)
+         */
+
+        Map<Integer, String> departements = new HashMap<>();
+        departements.put(75, "Paris");
+        departements.put(50, "Manche");
+        departements.put(59, "Nord");
+        departements.put(33, "Gironde");
+        departements.put(83, "Var");
+
+        departements.put(59,"nord"); // écrase la valeur Nord par nord
+
+        departements.putIfAbsent(59,"Nord");// ajoutera seulement si la clé 59 est absente ou si présente, mais à une valeur null
+
+        departements.replace(75,"paris"); // remplace Paris par paris
+
+        departements.remove(33);//supprime la valeur "Gironde" de la map
+
+        departements.containsKey(50);//vérifie la présence de "Manche" --> retourne true
+
+        departements.containsValue("Manche"); // vérifie la présence de la valeur "Manche"
+
+
+
+
     }
 }

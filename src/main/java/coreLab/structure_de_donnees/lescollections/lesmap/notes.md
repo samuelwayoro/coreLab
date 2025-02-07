@@ -5,7 +5,7 @@ de hachage </b> pour un accès rapide.
 En java, <b> les tables de hachage </b> sont principalement représentés par la classe <font color=red> HashMap</font>, 
 ainsi que par <font color=red>HashTable</font>(ancienne version synchronisée).
 
-#### 🎯 <font color=red>Pourquoi utiliser un table de Hashage ou Map en Java: </font>
+#### 🎯 <font color=red>Pourquoi utiliser une table de Hashage ou Map en Java: </font>
 
 ✅ <font color=red> Accès rapide :  </font> Temps d'accès O(1) en moyenne grâce a la fonction de hachage.
 
@@ -14,7 +14,6 @@ ainsi que par <font color=red>HashTable</font>(ancienne version synchronisée).
 ✅ <font color=red>Aucune duplication de clé : </font> Chaque clé est unique.
 
 ✅ <font color=red>Bonne performance : </font> pour les grandes quantités de données.
-
 
 
 #### 🎯 <font color=red>Principale implémentation en Java :  </font>
@@ -27,15 +26,27 @@ ainsi que par <font color=red>HashTable</font>(ancienne version synchronisée).
 
 <b>Exemple : voir classe Demo.java </b>
 
-
-#### 🎯 <font color=red>Quand utiliser une table de hachage en java :  </font>
-
-
-
-
 #### 🔥 <font color=red> Comment fonctionne une HashMap en interne ? </font>
 
-1. Une fonction de hashage transforme la clé en indice d'un tableau de "buckets"
-2. les entrées sont stockés sous forme de Map.Entry<K,V> dans ces "buckets."
-3. En cas de collisions (même index pour plusieurs clés), java utilise une liste chainée (et un arbre TreeNode si trop d'éléments)
-4. Depuis java 8 , une HashMap convertit les longues listes en arbres (TreeMap) pour accélérer les recherches.
+- Une fonction de hachage transforme la clé en indice d'un tableau de "buckets"
+
+- les entrées sont stockés sous forme de Map.Entry<K,V> dans ces "buckets."
+
+- En cas de collisions (même index pour plusieurs clés), java utilise une liste chainée (et un arbre TreeNode si trop d'éléments)
+
+- Depuis java 8, une HashMap convertit les longues listes en arbres (TreeMap) pour accélérer les recherches.
+
+#### 🌟 <font color=red>A RETENIR :</font>
+
+<b>L'interface Map appelé communément table de hachage</b> a pour implémentation : <b>HashMap</b> .
+Elle à les sous interfaces suivantes :
+- SortedMap 
+- NavigableSet 
+
+<b> qui ont pour implémentation TreeMap</b>.
+
+Ces implémentations n'implémentant pas l'interface Iterator, peuvent être parcourue (itérer) à partir des méthodes suivantes : 
+
+- <font color=red>.keySet() :</font> Qui retourne un Set des clés de l'implémentation de la Map 
+- <font color=red>.values() :</font> Qui retourne une collection, des valeurs de l'implementation de la Map 
+- <font color=red>.entrySet() :</font> Qui retourne un Set de Map.entry <i>(Map.entry est un objet encapsulant une paire clé-valeur )</i>
