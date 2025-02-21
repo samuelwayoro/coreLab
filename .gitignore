@@ -1,5 +1,19 @@
-.classpath
+# Dossier IntelliJ IDEA
+.idea/
 
-.project
+# Fichiers spécifiques aux projets IntelliJ
+*.iml
+*.ipr
+*.iws
 
-/.settings
+# Cache et logs
+out/
+*.log
+
+# Fichiers de configuration spécifiques à l'utilisateur
+workspace.xml
+tasks.xml
+usage.statistics.xml
+
+# Sauvegardes temporaires
+shelf/

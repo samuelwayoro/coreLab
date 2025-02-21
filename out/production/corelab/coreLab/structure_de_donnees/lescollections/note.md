@@ -38,7 +38,7 @@ L'interface Collections<E> est la racine des structures suivantes :
     * Vector : (obsolète, synchronisé)
   
   
-* <font color=red> Set : </font>(Pas de doublons, non ordonné sauf SortedSet)
+* <font color=red> Set : </font>(Pas de doublons, et souvent trié grâce à SortedSet)
 
     * HashSet : (rapide, non ordonné)
     * LinkedHashSet : (ordre d'insertion conservé)

@@ -33,8 +33,14 @@ public class ExempleList {
         }
 
 
-        //supprimer un élémént (Pomme)
+        //supprimer le premier élémént (Pomme) rencontré dans la liste
         fruits.remove("Pomme");
+
+        logger.debug("----------------");
+
+        for (String fruit : fruits) {
+            logger.debug(fruit); //affiche Banane,Orange,Pomme
+        }
 
         //afficher la taille de la List :
         logger.debug(" taille de la liste : {}", fruits.size()); //affiche 3
