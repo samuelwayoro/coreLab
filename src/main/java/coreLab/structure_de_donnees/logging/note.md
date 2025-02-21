@@ -9,7 +9,7 @@ disponible.
 En gros, il consiste à ajouter des traitements dans les applications pour permettre l'émission et le stockage 
 de messages suite à des événements.
 
-Une API de logging fait généralement intervenir trois composants principaux :
+<font color=gold> Une API de logging fait généralement intervenir trois composants principaux :</font>
 
 * <font color=gold> Logger :</font> invoqué pour émettre grâce au framework un message <b>généralement avec un niveau de gravité associé.</b>
 
@@ -17,8 +17,9 @@ Une API de logging fait généralement intervenir trois composants principaux :
 
 * <font color=gold>Appender : </font> utilisé pour envoyer le message à une cible de stockage : console, fichier, base de données, email, etc...
 
-Les niveaux de gravité permettent de filtrer les messages à envoyer dans les Appenders. En configurant le niveau de gravité voulu au lancement 
-d'une application, il est possible d'envoyer ou non des messages à l'éxecution en fonction de leur propre niveau de gravité.
+Les niveaux de gravité permettent de filtrer les messages à envoyer dans les Appenders. 
+En configurant le niveau de gravité voulu au lancement d'une application, il est possible d'envoyer ou 
+non des messages à execution en fonction de leur propre niveau de gravité.
 
 
 🔥<font color=red> <b>Pourquoi utiliser un système de logging</b></font>
