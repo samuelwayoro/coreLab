@@ -2,7 +2,7 @@
 .idea/
 
 # Fichiers spécifiques aux projets IntelliJ
-*.iml
+#*.iml
 *.ipr
 *.iws
 
