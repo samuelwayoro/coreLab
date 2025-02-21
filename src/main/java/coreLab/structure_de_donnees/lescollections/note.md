@@ -5,7 +5,7 @@ En java, Une collection est un ensemble d'objets (éléments) qui permet de stoc
 de manière efficace.
 
 Elle fait partie du framework Java <i>Collections(java.util.Collection)</i> et offre différentes structures adaptées
-aux besoins (List,Set,Queue,etc).
+aux besoins (List,Set,Queue,etc...).
 
 Les collections simplifient la gestion des données et offrent des performances optimisées. Pour en tirer parti il faut 
 choisir une structure adaptée au besoin (performance,tri,accès rapide).
