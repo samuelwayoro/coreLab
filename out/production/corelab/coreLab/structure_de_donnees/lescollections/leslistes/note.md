@@ -43,10 +43,10 @@ Exemple d'utilisation (voir classe ExempleList).
 
 🚀 <b>METHODES COURAMMENT UTILISEES </b>
 
-* .get(index) : récupéré un élément à partir de son index
-* .set(index,valeur) : modifier un élément à partir de son indice
-* .add() : ajouter un nouvel élément 
-* .subList(beginIndex,endIndex) : obtenir une sous liste de la liste débutant à l'index 
+* <b>.get(index)</b> : récupéré un élément à partir de son index
+* <b>.set(index,valeur)</b> : modifier un élément à partir de son indice
+* <b>.add() </b>: ajouter un nouvel élément 
+* <b>.subList(beginIndex,endIndex) </b> : obtenir une sous liste de la liste débutant à l'index 
 beginIndex inclus et endIndex exclus.
 
 

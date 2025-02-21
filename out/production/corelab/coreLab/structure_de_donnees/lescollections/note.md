@@ -5,7 +5,7 @@ En java, Une collection est un ensemble d'objets (éléments) qui permet de stoc
 de manière efficace.
 
 Elle fait partie du framework Java <i>Collections(java.util.Collection)</i> et offre différentes structures adaptées
-aux besoins (List,Set,Queue,etc).
+aux besoins (List,Set,Queue,etc...).
 
 Les collections simplifient la gestion des données et offrent des performances optimisées. Pour en tirer parti il faut 
 choisir une structure adaptée au besoin (performance,tri,accès rapide).
@@ -52,3 +52,26 @@ L'interface Collections<E> est la racine des structures suivantes :
 * <font color=red>Map : </font> (Pas une collection, mais souvent associé)
 
     * HashMap, LinkedHashMap, TreeMap (clé-valeur)
+
+
+#### 🚀 <font color=red>Créer des collections préremplies </font>
+
+Il existe 2 manières possibles de créer des collections pré-remplies d'éléments (objets ou non) : 
+
+1 - <b> méthode factory qui s'appelle : Arrays.asList(...)</b>
+
+      List<String> strings = Arrays.asList("one","two","three");
+
+2- <b> les Méthodes : List.of(...) ; Set.of(...) depuis java 9</b>
+
+* List.of() retourne une Liste 
+* Set.of () retourne un Set qui n'accepte pas de doublons
+
+
+
+<font color=red>NB : </font> ces méthodes factories retournent des listes immutables.
+C'est-à-dire qu'on ne peut ni leur rajouter des éléments, ni en supprimer : <font color=red>impossible d'utiliser la
+méthode add/remove </font>. 
+
+Seule la méthode. "replace()" est autorisée pour remplacer ses éléments.
+
