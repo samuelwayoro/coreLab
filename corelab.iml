@@ -147,6 +147,17 @@
         <jarDirectory url="jar://$USER_HOME$/Downloads/mockito-inline-5.1.1.jar!/" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="apiguardian-api-1.1.2" level="project" />
+    <orderEntry type="library" name="junit-jupiter-5.8.1" level="project" />
+    <orderEntry type="library" name="junit-jupiter-api-5.8.1" level="project" />
+    <orderEntry type="library" name="junit-jupiter-engine-5.8.1" level="project" />
+    <orderEntry type="library" name="junit-jupiter-params-5.8.1" level="project" />
+    <orderEntry type="library" name="junit-platform-commons-1.8.1" level="project" />
+    <orderEntry type="library" name="junit-platform-engine-1.8.1" level="project" />
+    <orderEntry type="library" name="mockito-core-5.15.2" level="project" />
+    <orderEntry type="library" name="mockito-inline-5.2.0" level="project" />
+    <orderEntry type="library" name="mockito-junit-jupiter-5.15.2" level="project" />
+    <orderEntry type="library" name="opentest4j-1.2.0" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="eea8962c-f96f-43f8-8b73-90e8e52308bb" />

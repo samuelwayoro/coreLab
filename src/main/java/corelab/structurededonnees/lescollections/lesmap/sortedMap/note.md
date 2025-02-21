@@ -29,11 +29,43 @@ Contrairement à <b>HashMap</b>, qui ne garantie pas d'ordre, <b>SortedMap range
 ✔ <font color=red> Sous-maps dynamiques : </font> subMap() ; headMap() ; tailMap() 
 
 ✔ <font color=red> Basé sur une structure de données : </font> <b>Red-Black Tree (via TreeMap), garantissant une complexité 
-O(Log n) pour les opérations.
+O(Log n) pour les opérations.</b>
 
 
-#### ⭐ <font color=red> Trie personnalisé avec un "Comparator"  : </font> 
+#### ⭐ <font color=red> Trie personnalisé en utilisant l'interface fonctionnelle "Comparator" </font> 
+- <font color=gold>Interface Comparator</font>
 
-Si tu veux trier dans l'ordre décroissant, on peut utiliser un comparator :
+Il est possible de personnaliser le "trie" en utilisant l'interface Comparator de deux manières :
+
+1- en passant directement en paramètre de l'instance de TreeSet comme dans cet exemple : 
 
         SortedMap<Integer,String> sortedMap = new TreeMap<>(Comparator.reversedOrder());
+
+2- en créant une classe implémentant l'interface Comparator afin de redéfinir la méthode :
+
+        public class UserComparator implements Comparator<User> {
+        
+            private int age;
+
+            @Override
+            public int compare(User u1,User u2) {
+                return Integer.compare(u1.getAge(),u2.getAge());
+            }
+
+        }
+
+<font color=red>exemple : exempleComparator.java </font>
+
+- <font color=gold>Interface Comparable<T></font>
+
+L'interface générique <i>Comparable<T></i> permet de parameter à sa guise, la notion de comparaison sur les objets des 
+classes d'un domaine dans un projet.
+
+        public Interface Comparable<T> {
+
+            int comparaTo(T t) ;
+        }
+
+Cette interface contient une méthode compareTo(T t) permettant de comparer deux objets et retournant un entier.
+
+Voir : <b> aveccomparable/AvecComparable.java </b>
