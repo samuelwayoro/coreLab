@@ -15,7 +15,6 @@ public class Triplet<K, V, U> extends Couple<K, V> {
 
 	public Triplet(K clef, V valeur) {
 		super(clef, valeur);
-		// TODO Auto-generated constructor stub
 	}
 
 	public Triplet(K clef, V valeur, U description) {

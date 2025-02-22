@@ -2,20 +2,16 @@ package corelab.structurededonnees.genericite;
 
 import java.io.Serializable;
 /**
- * ProduitLiquide est une classe fille de la classe produit
- * et qui implémente les deux interfaces Serializable et Clonaeble
+ * ProduitLiquide est une classe fille de la classe Produit
+ * et qui implémente les deux interfaces Serializable et Cloneable
  */
 public class ProduitLiquide extends Produit implements Serializable , Cloneable  {
-	
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	private double quantite;
 
 	public ProduitLiquide(Long id, String nom, String description) {
 		super(id, nom, description);
-		// TODO Auto-generated constructor stub
 	}
 
 	public ProduitLiquide(Long id, String nom, String description, double quantite) {

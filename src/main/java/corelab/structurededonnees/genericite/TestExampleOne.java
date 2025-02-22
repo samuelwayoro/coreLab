@@ -7,9 +7,9 @@ public class TestExampleOne {
 		// utilisation de la classe generique Container
 
 		// instantiation avec le type Integer
-		ExempleOne<Integer> cInt = new ExempleOne<Integer>(3);
+		ExempleOne<Integer> cInt = new ExempleOne<>(3);
 		// instantiation avec un type String
-		ExempleOne<String> cString = new ExempleOne<String>("Titi");
+		ExempleOne<String> cString = new ExempleOne<>("Titi");
 
 		System.out.println("avant :" + cInt.lire() + " et " + cString.lire());
 		cInt.affecter(7);

@@ -1,9 +1,9 @@
 package corelab.structurededonnees.genericite;
 
 /**
- * la classe CalculGenericMethodWithProperty<U> est une classe générique avec un seul paramètre <U> 
+ * La classe CalculGenericMethodWithProperty<U> est une classe générique avec un seul paramètre <U>
  * et qui contient une méthode générique <T> boolean compare(Ta , T b)
- * NB : les paramètres U et T sont différents ils peuvent ne pas être identique
+ * NB : les paramètres U et T sont différents, ils peuvent ne pas être identiques
  * @param <U>
  */
 public class CalculGenericMethodWithProperty<U> {

@@ -1,7 +1,7 @@
 package corelab.structurededonnees.genericite;
 /**
- * la classe CalculGenericMethod ne contient qu'une seule méthode générique sans qu'elle ne soit elle même une classe 
- * générique . 
+ * La classe CalculGenericMethod ne contient qu'une seule méthode générique
+ * sans qu'elle ne sois elle-même une classe générique
  */
 public class CalculGenericMethod {
 	

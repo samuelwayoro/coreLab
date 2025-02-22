@@ -3,8 +3,7 @@ package corelab.structurededonnees.genericite;
 public class TestMethodeGenerique {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
 		Integer[] tabInt = {4,100,5,25,70};
 		//System.out.println(getElementAleatoire(tabInt)); //genere un nombre aléatoire contenu dans le tableau d'entier tabInt
 		
