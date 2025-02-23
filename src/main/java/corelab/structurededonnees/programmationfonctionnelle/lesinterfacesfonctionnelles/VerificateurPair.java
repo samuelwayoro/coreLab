@@ -7,6 +7,6 @@ public interface VerificateurPair {
 	 * @param nombre
 	 * @return
 	 */
-	public boolean estPair(int nombre);
+	boolean estPair(int nombre);
 	
 }
