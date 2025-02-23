@@ -8,6 +8,7 @@ public class Main {
 
         testBiPredicate("Bonjour", "on");
 
+
         String prenom = "Blaise";
         testBiPredicate(prenom, "Samuel");
     }
