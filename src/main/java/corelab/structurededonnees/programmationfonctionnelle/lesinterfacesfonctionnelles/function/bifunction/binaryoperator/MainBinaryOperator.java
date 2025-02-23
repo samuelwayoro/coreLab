@@ -13,7 +13,7 @@ public class MainBinaryOperator {
 	}
 	
 	/**
-	 * concatener deux chaines de caractères à
+	 * Concatener deux chaines de caractères à
 	 * l'aide d'un BinaryOperator<String>
 	 * @param s1
 	 * @param s2
