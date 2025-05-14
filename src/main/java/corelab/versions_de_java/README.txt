@@ -3,57 +3,56 @@ les versions de java evoluent selon les avancées des travaux sur les JSR .
 les versons LTS en sont les principales a connaitres car sont plus pricées pour les version de code utilisées en prod.
 
 ***********************************************************************************************************************************
-VERSION           *	FONCTIONNALITE CLES															    * DATE DE SORTIE
-				  *																					*
+VERSION / année de sortie         *	FONCTIONNALITE CLES															  
+				  *																					
 ***********************************************************************************************************************************
-J2SE 5.0          *	---> For Loop améliorée - Enums - Autoboxing/Unboxing							* Septembre 2004
-				  * 																				*
-				  *	//ancienne méthode itérateur :													*
-				  * for(Iterator<String> i = names.iterator(); i.hasNext(); ){						*
-				  *		String name = i.next();														*
-				  *		System.out.println(name);													*
-				  *	}																				*
-				  *																					*
-				  *	//nouvelle méthode avec for améliorée :											*
-				  *	for(String name : names){														*
-				  *		System.out.println(name);													*
-				  *	}																				*
-				  *																					*
-				  *	---> Apparution des Enums  qui fournissent un moyen typé de stocker un ensemble *
-				  *	de constantes : 																*
-				  *	enum Couleur{																	*
-				  *		ROUGE;VERT;BLEU																*
-				  *	}																				*
-				  *																					*
-				  *	---> Le Autoboxing et le Unboxing : simplification des conversions de type      *
-				  *	   primitif vers le type objet .												*
-				  *	Autoboxing : conversion d'une valeur de son type primitif vers son type Objet 	*
-				  *				 correspondant .													*
-				  *	//Autoboxing 																	*
-				  *	Integer a = 10;																	*
-				  *																					*
-				  *	Unboxing : conversion d'une valeur de sont type primitif vers son type Objet 	*
-				  *			   correspondant . 														*
-				  *	//Unboxing																		*
-				  *	int b = a;																		*
-				  *																					*
+J2SE 5.0 / Septembre 2004         *	---> For Loop améliorée - Enums - Autoboxing/Unboxing							  																				
+				  *	//ancienne méthode itérateur :													
+				  *     for(Iterator<String> i = names.iterator(); i.hasNext(); ){						
+				  *		String name = i.next();														
+				  *		System.out.println(name);													
+				  *	}																			
+				  *																				
+				  *	//nouvelle méthode avec for améliorée :											
+				  *	for(String name : names){														
+				  *		System.out.println(name);													
+				  *	}																				
+				  *																					
+				  *	---> Apparution des Enums  qui fournissent un moyen typé de stocker un ensemble 
+				  *	de constantes : 																
+				  *	enum Couleur{																	
+				  *		ROUGE;VERT;BLEU																
+				  *	}																				
+				  *																					
+				  *	---> Le Autoboxing et le Unboxing : simplification des conversions de type      
+				  *	   primitif vers le type objet .												
+				  *	Autoboxing : conversion d'une valeur de son type primitif vers son type Objet 	
+				  *				 correspondant .													
+				  *	//Autoboxing 																	
+				  *	Integer a = 10;																	
+				  *																					
+				  *	Unboxing : conversion d'une valeur de sont type primitif vers son type Objet 	
+				  *			   correspondant . 														
+				  *	//Unboxing																		
+				  *	int b = a;																		
+				  *																					
 *************************************************************************************************************************************
-JAVA SE 8 LTS	  																						Mars 2014
-					---> LES INTERFACES FONCTIONNELLE :
-					     -----------------------------
-						Une interface fonctionnelle est une interface qui possède une seule méthode
-						abstraite . ELle peut avoir plusieurs méthodes par défaut ou plusieurs méthodes
-						statiques . Mais la caractéristique principale est cette méthode abstraite .
-						Elle est généralement annotée @FunctionnalInterface pour signaler au compilateur 
-						de vérifier sa validité . 
-						
-						exemple : 
-						@FunctionalInterface
-						Public interface MyInterface(){
-							void myMethod();
-						}
-
-					---> LES METHODES PAR DEFAUT DANS LES INTERFACES FONCTIONNELLE  :                 	
+JAVA SE 8 LTS /Mars 2014	  *																				
+				  *	---> LES INTERFACES FONCTIONNELLE :
+				  *	     -----------------------------
+				  *		Une interface fonctionnelle est une interface qui possède une seule méthode
+				  *		abstraite . Elle peut avoir plusieurs méthodes par défaut ou plusieurs méthodes
+				  *		statiques . Mais la caractéristique principale est cette méthode abstraite .
+				  *		Elle est généralement annotée @FunctionnalInterface pour signaler au compilateur 
+				  *		de vérifier sa validité . 
+				  *		
+				  *		exemple : 
+				  *		@FunctionalInterface
+				  *		Public interface MyInterface(){
+				  *			void myMethod();
+				  *		}
+                                  *
+				  *	---> LES METHODES PAR DEFAUT DANS LES INTERFACES FONCTIONNELLES  :                 	
 						exemple : la méthode sort de l'interface List
 						
 						default void sort(Comparator<? super E> c {
@@ -65,7 +64,7 @@ JAVA SE 8 LTS	  																						Mars 2014
 				   		//Utilisation de stream dans une expression lambda								
 				   		names.stream().filter(n->n.startsWith("A")).forEach(System.out::println);		
 				  																					
-				   	--->LES METHODE STATIQUES DANS LES INTERFACES :									
+				   	--->LES METHODES STATIQUES DANS LES INTERFACES :									
 				          Permettant de définir des méthodes d'assistance  réutilisable dans les 	
 				        interfaces .																
 				    																				
@@ -76,7 +75,7 @@ JAVA SE 8 LTS	  																						Mars 2014
 				         }																				
 				  																					
 ************************************************************************************************************************************
-JAVA 9			   	---> MODULARISATION (Java Platform Modul System) : servant à mieux structurer 	    Septembre 2017			   
+JAVA 9 /Septembre 2017			   	---> MODULARISATION (Java Platform Modul System) : servant à mieux structurer 	    			   
 				  	   les applications en modules interconnectées . En gros un module est un package 								 
 				  	  qui contient d'autres packages avec un fichier module-info.java a sa racine. 
 				  
@@ -88,7 +87,7 @@ JAVA 9			   	---> MODULARISATION (Java Platform Modul System) : servant à mieux
 				  	  NB: LE JDK A ETE REORGANISE EN MODULE AMELIORANT LA GESTION DES DEPENDANCES	
 				  		   DANS LE CLASSPATH													
 				  	  NB: pour utiliser les modules il faut créer un fichier nommer : 
-				  		  module-info.java a la racine du package principale et y mettre toutes les 
+				  		  module-info.java à la racine du package principale et y mettre toutes les 
 				  		  infos descriptives du module. En somme un
 				  
 				  
@@ -103,7 +102,7 @@ JAVA 9			   	---> MODULARISATION (Java Platform Modul System) : servant à mieux
 				    	} 											 								 
 				  	   											 									 
 **************************************************************************************************************************************				  
-JAVA SE 10		  	 ---> INFERENCE DE TYPE LOCALE AVEC : VAR 										    Mars 2018
+JAVA SE 10  / Mars 2018		  	 ---> INFERENCE DE TYPE LOCALE AVEC : VAR 										    
 				  		 Réduis la verbosité du code sans sacrifier la clarté.			             	
 				       
 				 	    //avant java 10 : on spécifie le type de la variable explicitement 
@@ -114,8 +113,8 @@ JAVA SE 10		  	 ---> INFERENCE DE TYPE LOCALE AVEC : VAR 										    Mars 2018
 				 	 	//le compilateur infère que myList est de type List<String>
 				 	 	var myList = new ArrayList<String>() 
 *************************************************************************************************************************************
-JAVA SE 14			---> LES EXPRESSIONS SWITCH (en preview dans java 12 et 13)							Mars 2020
-						amélioration de la syntaxe des instructiond switch en permettant plusieurs 
+JAVA SE 14 / Mars 2020			---> LES EXPRESSIONS SWITCH (en preview dans java 12 et 13)							
+						amélioration de la syntaxe des instructions de switch en permettant plusieurs 
 						valeurs par cas , surtout en eliminant le besoin de break .
 						
 						exemple :
@@ -127,7 +126,7 @@ JAVA SE 14			---> LES EXPRESSIONS SWITCH (en preview dans java 12 et 13)							M
 						};
 						System.out.println(typeOfDay);
 *************************************************************************************************************************************
-JAVA SE 15 			---> LES TEXT BLOCS (En preview dans java 13 et 14)									Septembre 2020
+JAVA SE 15 / Septembre 2020			---> LES TEXT BLOCS (En preview dans java 13 et 14)									
 						 Rend la manipulation de chaîne de caractère multiligne beaucoup plus 
 						 simple . Simplifiant l'écriture de texte tel que : sql , html , json ...
 						 exemple :
@@ -138,7 +137,7 @@ JAVA SE 15 			---> LES TEXT BLOCS (En preview dans java 13 et 14)									Septem
 						 System.out.println(text);
 
 ***********************************************************************************************************************************
-JAVA SE 16			---> Record classes																	Mars 2021
+JAVA SE 16 / Mars 2021  			---> Record classes																	
 						 Permettant de creer de type de données immuables sans code superflu .	
 						 Un record est un nouveau type du langage Java qui permet au travers d'une syntaxe très simplifiée
 						 de définir une classe qui encapsule des données de manière immuable.
@@ -184,8 +183,8 @@ JAVA SE 16			---> Record classes																	Mars 2021
 						 entre simplicité et flexibilité.
 						 
 ***********************************************************************************************************************************
-JAVA SE 17 			---> Sealed classes :
-						 * les classes scellés servent a avoir un contrôle précis de l'héritage  		Septembre 2021
+JAVA SE 17 / Septembre 2021			---> Sealed classes :
+						 * les classes scellés servent a avoir un contrôle précis de l'héritage  		
 						 * utilisation de "sealed" classe X permits listes de classes autorisées à 
 						 étendre la classe X . 
 						 * "sealed" est un mot-clé réservé (un mot clé contextuel)
