@@ -33,7 +33,7 @@ public class MainConsumer {
     }
 
     /**
-     * affichage d'un texte dans la sortie standart a partir d'un Consumer
+     * Affichage d'un texte dans la sortie standard à partir d'un Consumer
      *
      * @param t
      */

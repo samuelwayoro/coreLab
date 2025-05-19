@@ -12,7 +12,7 @@ public class MainFunction {
     public static void main(String[] args) {
 
         /**
-         * Imaginez qu'on veuille renvoyer la longeur d'une chaîne de caractère ?
+         * Imaginez qu'on veuille renvoyer, la longeur d'une chaîne de caractère ?
          */
         Function<String, Integer> stringLength = s -> s.length();
 
