@@ -10,13 +10,13 @@ ArrayList , LinkedList, Vector.
 
 #####  🚀 <font color=red> Principales caractéristiques d'une List :</font>
 
-🔥 <b> 1. Les éléments sont ordonnés : </b>
+🔥 <b> Les éléments sont ordonnés : </b>
 Les éléments sont stockés dans l'ordre ou ils ont été ajoutés.
 
-🔥 <b> 2. Les éléments sont indexés :</b> 
+🔥 <b> Les éléments sont indexés :</b> 
 Accès direct aux éléments via leurs indices (list.get(index))
 
-🔥 <b> 3. Autorise les doublons :</b>
+🔥 <b> Autorise les doublons :</b>
 Un même élément peut être ajouté plusieurs fois.
 
 

@@ -47,7 +47,7 @@ Par exemple :
 ##### ❗ <font color=red> Exemple </font>
 
 Dans le but de trier les éléments d'une liste de chaîne de caractère, on décide d'utiliser l'interface Comparator.
-Voyons comment l'écriture du code est plus verbeuse la classe anonyme et moins avec l'expression lambda pour le même
+Voyons comment l'écriture du code est plus verbeuse avec la classe anonyme et moins avec l'expression lambda pour le même
 cas.
 
 * <b> utilisation d'une classe anonyme </b>

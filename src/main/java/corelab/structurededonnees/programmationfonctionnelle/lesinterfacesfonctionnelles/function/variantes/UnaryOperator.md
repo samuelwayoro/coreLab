@@ -13,3 +13,4 @@ Sous interface de Function, elle représente une fonction qui prend un seul argu
             T apply(T t);
         
         }
+* <font color=red> cas d'utilisation : </font> Parfait pour modifier ou transformer une ou un flux de valeurs (mise en majuscule, retourne une valeur au carrée ...)

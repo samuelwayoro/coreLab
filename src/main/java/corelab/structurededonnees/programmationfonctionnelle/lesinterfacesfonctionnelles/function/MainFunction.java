@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.function.Function;
+import java.util.function.UnaryOperator;
 
 public class MainFunction {
 
@@ -22,7 +23,7 @@ public class MainFunction {
          * Exemple avec chaînage
          ***/
 
-        Function<Integer, Integer> doubleInt = n -> n * 2;
+        UnaryOperator<Integer> doubleInt = n -> n * 2;
 
         //chaînage : Longeur, puis multiplication par 2
         Function<String, Integer> combined = stringLength.andThen(doubleInt);

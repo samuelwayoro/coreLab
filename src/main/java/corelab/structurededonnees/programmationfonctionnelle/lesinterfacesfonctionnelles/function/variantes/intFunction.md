@@ -12,4 +12,4 @@ ce qui améliore les performances.
 * <font color=red>Méthode :</font> <b>R apply (int value)</b> 
 
 
-##### 📔 <font color=red> Exemple :  </font> MainIntFunction.java (convertir un int en String)
+##### 📔 <font color=red> Exemple :  </font> MainIntFunction.java (convertir un int en String) et un autre exemple montrant comment générer les n premier carré parfait 
