@@ -6,7 +6,7 @@
 * <font color=red>Méthode principale :</font> <b>void accept(T t)</b>.
 
 
-* <font color=red>Méthode par défaut :</font> <b>andThen</b> pour chaîner des consommateurs .
+* <font color=red>Méthode par défaut :</font> <b>andThen</b> pour chaîner des consumers.
 
 
 * <font color=red>Variantes :</font>
@@ -14,7 +14,7 @@
     * <b>IntConsumer, LongConsumer, DoubleConsumer</b> Versions spécialisées
       pour éviter l'autoboxing (conversion de type primitif vers son type wrapper).
 
-    * <b> BiConsumer < T, U>  </b> accepte deux arguments. 
+    * <b> BiConsumer < T, U></b> accepte deux arguments. 
 
 
 

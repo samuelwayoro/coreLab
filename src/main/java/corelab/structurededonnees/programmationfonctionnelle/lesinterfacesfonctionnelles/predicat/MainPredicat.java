@@ -16,7 +16,8 @@ public class MainPredicat {
 
 
         /**
-         * Déclarer un prédicate qui vérifie que la longeur d'une chaine de caractère est plus grand que 5
+         * Déclarer un prédicate qui vérifie que
+         * la longeure d'une chaine de caractère est plus grand que 5
          */
         Predicate<String> isLong = s -> s.length() > 5;
 
@@ -51,7 +52,8 @@ public class MainPredicat {
          * Negate, un Predicate inverser une condition
          */
 
-        Predicate<Integer> estPaire = n -> n % 2 == 0;
+        Predicate<Integer> estPaire;
+        estPaire = n -> n % 2 == 0;
 
         Predicate<Integer> estImpaire = estPaire.negate();
 
