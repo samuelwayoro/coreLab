@@ -1,8 +1,12 @@
 #### <font color=red> LES LIST  </font>
 
-Une LIST est une <font color=red>collection qui préservant l'ordre d'insertion d'éléments et pouvant contenir des 
+Une LIST est une <font color=red>collection qui préserve l'ordre d'insertion d'éléments et peux contenir des 
 doublons.</font><b>Contrairement aux Sets, une List conserve l'ordre d'insertion des éléments et permet d'accéder aux éléments via leur
 indice (comme un tableau dynamique).</b>
+
+<font color=red> A RETENIR </font>: 
+Collection ordonnnée de données, respectant l'ordre d'insertion et acceptant les doublons et implémentées par les classes :
+ArrayList , LinkedList, Vector.
 
 #####  🚀 <font color=red> Principales caractéristiques d'une List :</font>
 

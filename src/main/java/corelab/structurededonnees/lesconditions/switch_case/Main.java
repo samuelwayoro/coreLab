@@ -4,8 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		/*
-		 * la structure de condition switch case est utilisée pour controller les flux
-		 * d'informations dont on connaîts les valeurs probables ...
+		 * La structure de condition switch case est utilisée pour controller les flux
+		 * d'informations dont on connaît les valeurs probables
 		 * 
 		 * la syntax est :
 		 * 
