@@ -7,13 +7,13 @@ import java.util.stream.Stream;
 public class FlatMapExemple {
 
     /**
-     * FlatMap() sert à applatir un Stream de sous-éléments (souvent des éléments de collections) en un
+     * FlatMap() sert à aplatir un Stream de sous-éléments (souvent des éléments de collections) en un
      * Stream plat d'éléments uniques.
      * Autrement, dit-il permet de transformer une sous-collection de données d'un stream en un seul stream.
-     * <p>
+     *
      * - QUAND L'UTILISER :
-     * FlatMap s'utilise lorsque chaque élément d'un stream contient une collection (souvent une liste , ou une liste de liste)
-     * et qu'on aimerait extraire comme une seule séquence continue
+     * FlatMap s'utilise lorsque chaque élément d'un stream contient une collection (fréquemment une liste, ou une liste de liste)
+     * et qu'on aimerait extraire comme une seule séquence continue, c'est-à-dire en un seul Stream.
      */
 
 
@@ -29,7 +29,7 @@ public class FlatMapExemple {
     }
 
     /**
-     * Exemple 2 : Imprimer une collection de collection d'objets (liste de liste) directment avec FlatMap
+     * Exemple 2 : Imprimer une collection de collection d'objets (liste de liste) directement avec FlatMap
      *
      * @param listOfLists
      */
@@ -42,7 +42,6 @@ public class FlatMapExemple {
     /**
      * Récupérer tous les emails uniques d'une collection de User (ayant au préalable chacun une liste d'emails)
      * les trie et les affiche dans la console.
-     *
      * NB : utilise distinct pour supprimer les doublons
      *
      */
