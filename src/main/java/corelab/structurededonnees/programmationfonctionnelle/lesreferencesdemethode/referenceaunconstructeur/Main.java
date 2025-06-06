@@ -1,8 +1,6 @@
 package corelab.structurededonnees.programmationfonctionnelle.lesreferencesdemethode.referenceaunconstructeur;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 public class Main {
 
@@ -21,14 +19,14 @@ public class Main {
 		users.map(User::new).forEach(System.out::println);
 	}
 
-	class User{
+	static class User{
 		private String name;
 
 		public User (String name){
 			this.name = name;
 		}
 
-		public Stirng getName(){
+		public String getName(){
 			return this.name;
 		}
 
