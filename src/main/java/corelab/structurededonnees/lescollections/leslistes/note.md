@@ -4,7 +4,7 @@ Une LIST est une <font color=red>collection qui préserve l'ordre d'insertion d'
 doublons.</font><b>Contrairement aux Sets, une List conserve l'ordre d'insertion des éléments et permet d'accéder aux éléments via leur
 indice (comme un tableau dynamique).</b>
 
-<font color=red> A RETENIR </font>: 
+<font color=red> A RETENIR </font><br> 
 Collection ordonnnée de données, respectant l'ordre d'insertion et acceptant les doublons et implémentées par les classes :
 ArrayList , LinkedList, Vector.
 

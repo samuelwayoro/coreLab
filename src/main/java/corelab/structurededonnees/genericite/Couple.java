@@ -1,8 +1,8 @@
 package corelab.structurededonnees.genericite;
 
 /**
- * utilisation de type générique T1 et T2 emplacé après le nom de la class pour
- * dire qu'il s'agit des type utilisés pour les propriétés de la classe ...
+ * Utilisation de type générique T1 et T2 emplacé après le nom de la class pour
+ * dire qu'il s'agit de type utilisés pour les propriétés de la classe
  * 
  * @param <T1>
  * @param <T2>

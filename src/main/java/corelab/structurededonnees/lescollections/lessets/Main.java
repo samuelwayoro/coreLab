@@ -27,7 +27,7 @@ public class Main {
 
         Personne personne1 = new Personne(1, "Wayoro", "Samuel");
         Personne personne2 = new Personne(2, "Wayoro", "Isaac");
-        Personne personne3 = new Personne(1, "Wayoro", "Samuel"); //ne séra pas rajouté (car doublon)
+        Personne personne3 = new Personne(1, "Wayoro", "Samuel");//ne séra pas rajouté (car doublon)
         Personne personne4 = new Personne(3, "Wayoro", "Samuel");//sera rajouté, car id différent
         Set<Personne> peopleSet = new HashSet<>();
         peopleSet.add(personne1);
@@ -50,7 +50,6 @@ public class Main {
         leSet.add("h");
 
         parcourAvecForEach(leSet);
-
 
         //copierUnSetAunAutre(monSet, leSet);
 
@@ -94,14 +93,15 @@ public class Main {
     }
 
     static <T> void copierUnSetAunAutre(Set<T> setOne, Set<T> setTwo) {
-        System.out.println("premier set : ");
-        setOne.forEach(x -> System.out.println(x));
+        logger.info("premier test : ");
+        setOne.forEach(System.out::println);
 
         System.out.println("deuxième set ");
+        logger.info("deuxième set : ");
         setTwo.forEach(c -> System.out.println(c));
 
         System.out.println("copie ---- ");
-        setTwo.addAll(setTwo);
+        setTwo.addAll(setOne);
         System.out.println("fin de copie ----");
         setTwo.forEach(c -> System.out.println(c));
 

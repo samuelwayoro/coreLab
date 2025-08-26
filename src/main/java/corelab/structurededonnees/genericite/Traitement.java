@@ -1,9 +1,9 @@
 package corelab.structurededonnees.genericite;
 
 /**
- * la classe traitement est une classe générique
- * mais qui n'utilise pas n'importe qu'elle type parametré 
- * mais uniquement une classe T fille de la classe Produit 
+ * La classe traitement est une classe générique,
+ * qui n'utilise pas n'importe qu'elle type,
+ * mais uniquement une classe T fille de la classe Produit.
  * @param <T>
  */
 public class Traitement<T extends Produit> {

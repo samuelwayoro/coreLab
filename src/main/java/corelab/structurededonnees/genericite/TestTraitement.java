@@ -1,17 +1,27 @@
 package corelab.structurededonnees.genericite;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class TestTraitement {
 
-	public static void main(String[] args) {
+    private static final Logger log = LogManager.getLogger(TestTraitement.class);
 
-		Traitement<Produit> traitement = new Traitement<Produit>(new Produit(1L, "Huile", "un bidon d'huile Lesieur"),
-				new Produit(2L, "Miel", "miel de korhogo"));
+    public static void main(String[] args) {
 
-		//TraitementDeux<Produit> t = new TraitementDeux<Produit>(null)//ne compilera pas car Produit n'implemente pas Cloneable et Serializable
-		
-		TraitementDeux<ProduitLiquide> t2 = new TraitementDeux<>("test de traitement deux ");
-		System.out.println(t2.toString());
 
-	}
+        Traitement<Produit> traitement = new Traitement<Produit>(new Produit(1L, "Huile", "un bidon d'huile Lesieur"),
+                new Produit(2L, "Miel", "miel de korhogo"));
+
+        //TraitementDeux<Produit> t = new TraitementDeux<Produit>(null)//ne compilera pas car Produit n'implemente pas Cloneable et Serializable
+
+        //creation de l'objet de type ProduitLiquide
+        ProduitLiquide pl = new ProduitLiquide(1L, "Huile Dinor", "Huilde produite en Côte d'Ivoire", 12.5);
+
+        TraitementDeux<ProduitLiquide> traitementDeux = new TraitementDeux<>(pl);
+
+        log.info("affichage de traitementDeux {}", traitementDeux);
+
+    }
 
 }

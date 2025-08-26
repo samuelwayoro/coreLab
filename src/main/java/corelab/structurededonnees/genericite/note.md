@@ -41,7 +41,8 @@ utilisées dans la classe TestTraitement().
 Il est aussi possible de créer des méthodes génériques qui ont des paramètres génériques et qui retourne 
 en résultats ou non des objets de type générique. 
 Elles sont très utilisées dans les interfaces...
-Elles peuvent être déclarées dans une classe non générique ou même dans une interface générique ou non .
+
+<b> Elles peuvent être déclarées dans une classe non générique ou même dans une interface générique ou non .</b>
 
 * EXEMPLE 1 : La méthode <K,V> boolean Comparateur() de la classe TestCouple() .
 elle retourne un objet de type générique <K,V>.

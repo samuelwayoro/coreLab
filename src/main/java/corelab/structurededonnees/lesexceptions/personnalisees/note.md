@@ -14,7 +14,7 @@ On peut donner le choix d'avoir un message d'erreur ou non dans l'Exception en d
         }
     }
 
-Il est préférable d'étendre Exception dans ces implémentations personnalisées pour être sûrs d'avoir des checked exceptions.
+Il est préférable d'étendre Exception dans ces implémentations personnalisées <b> pour être sûrs d'avoir des checked exceptions.</b>
 
 Par convention, on met le mot Exception dans le nom d'une exception personnalisée.
 

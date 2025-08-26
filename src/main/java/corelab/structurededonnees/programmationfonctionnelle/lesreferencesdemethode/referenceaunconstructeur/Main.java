@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 public class Main {
 
 	/****
-	 * exemple d'utilisation de référence a un constructeur permettant de créer de nouvelle  instance de la classe User
+	 * exemple d'utilisation de référence a un constructeur permettant de créer de nouvelles instances de la classe User
 	 * @param args
 	 */
 	public static void main(String[] args) {

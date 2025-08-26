@@ -1,36 +1,34 @@
 package corelab.structurededonnees.genericite;
 
 import java.io.Serializable;
+
 /**
- * TraitementDeux est une classe générique mais pas n'importe laquelle ...
- * elle accepte uniquement a l'instantiation une classe T
- * - fille de la classe Produit
- * - et qui implémente l'interface Serializable
- * - et qui implemente l'interface Cloneable 
+ * TraitementDeux est une classe générique acceptant uniquement une classe T :
+ * fille de la classe Produit
+ * implémentant les interfaces Serializable et Cloneable
+ *
  * @param <T>
  */
 public class TraitementDeux<T extends Produit & Serializable & Cloneable> {
-	
-	private String detail;
 
-	public String getDetail() {
-		return detail;
-	}
+    private T detail;
 
-	public void setDetail(String detail) {
-		this.detail = detail;
-	}
+    public TraitementDeux(T detail) {
+        this.detail = detail;
+    }
 
-	public TraitementDeux(String detail) {
-		super();
-		this.detail = detail;
-	}
+    public T getDetail() {
+        return detail;
+    }
 
-	@Override
-	public String toString() {
-		return "TraitementDeux [detail=" + detail + "]";
-	}
-	
-	
+    public void setDetail(T detail) {
+        this.detail = detail;
+    }
+
+    @Override
+    public String toString() {
+        return "TraitementDeux instancié à partir d'un " + detail.getClass() + " dans la propriété details avec :  id =" + detail.getId() + " nom =" + detail.getNom() + " description=" + detail.getDescription();
+    }
+
 
 }

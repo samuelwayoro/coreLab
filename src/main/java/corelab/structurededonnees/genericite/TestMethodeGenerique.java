@@ -21,7 +21,7 @@ public class TestMethodeGenerique {
 		
 	}
 	/**
-	 * méthode qui retourne un élément aléatoire d'un tableau donné en paramètre 		
+	 * Méthode qui retourne un élément aléatoire d'un tableau donné en paramètre
 	 * @param <T>
 	 * @param genericTab
 	 * @return un générique défini au moment de l'instanciation
@@ -30,7 +30,7 @@ public class TestMethodeGenerique {
 		if(genericTab.length == 0 || genericTab == null) {
 			return null;
 		}
-		//on generère un indice aléatoire du tableau et on y recupère l'élément 
+		//renvoi un element du tableau à partir de son indice, généré aléatoirement
 		int indice = (int) (Math.random()*genericTab.length);
 		return genericTab[indice];
 	}

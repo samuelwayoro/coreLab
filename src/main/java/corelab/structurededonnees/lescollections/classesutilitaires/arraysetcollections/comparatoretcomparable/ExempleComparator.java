@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ExempleComparator {
 
-    private static final Logger logger = LogManager.getLogger(ExempleComparable.class);
+    private static final Logger logger = LogManager.getLogger(ExempleComparator.class);
 
     public static void main(String[] args) {
 

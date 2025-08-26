@@ -7,8 +7,8 @@ public class CheckedExceptionExample {
     public static void main(String[] args) throws FileNotFoundException {
 
         /*
-         * Exemple de gestion d'un checkexception de type FileNotFoundException
-         * qui est levée quand on essai de lire un fichier qui est intrové
+         * Exemple de gestion d'un CheckException de type FileNotFoundException
+         * qui est levée quand on essaie de lire un fichier qui n'est pas trouvé.
          */
         try {
             //bon chemin du fichier

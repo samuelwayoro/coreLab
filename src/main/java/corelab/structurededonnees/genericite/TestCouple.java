@@ -14,10 +14,11 @@ public class TestCouple {
 
 	/***
 	 * la classe TestCouple expose une méthode "comparateur" qui retourne un booleén
-	 * après avoir comparé deux objets de type générique . On peux remarquer ici
+	 * après avoir comparé deux objets de type générique.
+	 * On peut remarquer ici
 	 * l'emplacement des symboles de la généricité <K,V> avant le type de retour
 	 * (boolean) de la méthode... il s'agit ici des types des paramètres de la
-	 * méthode et non du type de retour de la méthode .
+	 * méthode et non du type de retour de la méthode.
 	 */
 	public static <K, V> boolean comparateur(Couple<K, V> e1, Couple<K, V> e2) {
 		return e1.getClef().equals(e2.getClef());
