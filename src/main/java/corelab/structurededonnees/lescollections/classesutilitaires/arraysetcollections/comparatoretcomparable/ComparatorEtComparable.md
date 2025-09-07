@@ -98,7 +98,7 @@ travailles avec des classes que tu ne contrôles pas.
 * <b> Utilise Comparator : </b>
 
    * Si tu as besoin de plusieurs façons de trier (exemple sur les différentes propriétés de la classe)
-   * SI tu travailles sur des classes tierces ou sans accès au code source
+   * Si tu travailles sur des classes tierces ou sans accès au code source
    * Avec des API modernes comme Stream : liste.stream().sorted(comparator).
 
 #### 🎁 <font color=gold> ASTUCE BONUS  </font>

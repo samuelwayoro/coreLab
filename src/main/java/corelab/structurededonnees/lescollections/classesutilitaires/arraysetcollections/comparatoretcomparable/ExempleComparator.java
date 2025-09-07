@@ -4,7 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -23,11 +22,9 @@ public class ExempleComparator {
         personList.add(new Personne("Arnold", 37));
 
         //trie croissant à partir des ages des éléments de la liste en utilisant l'interface Comparator
-        Comparator<Personne> ageComparison = (Personne p1, Personne p2) -> p1.getAge() - p2.getAge();
+        personList.sort(Comparator.comparingInt(Personne::getAge)); //Collections.sort(personList, Comparator.comparingInt(Personne::getAge));
 
-        Collections.sort(personList, ageComparison);
-
-        logger.debug("{}", personList); //[Isaac(32), Sam(36), Arnold(37), Logan(38), Jessica(42)]
+        logger.info("{}", personList); //[Isaac(32), Sam(36), Arnold(37), Logan(38), Jessica(42)] trie par ordre croissant (ordre naturel)
 
     }
 
