@@ -59,6 +59,10 @@ public class StreamMain {
         System.out.println(opt);
 
 
+        var departements = Map.of(1,"Ains",2,"Aisnes");
+
+
+
     }
 
 

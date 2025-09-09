@@ -3,8 +3,8 @@
 Paradigme de programmation qui considère le calcul comme l'évaluation de fonctions mathématiques et évite les 
 changements d'états des données mutables.
 
-En Java c'est une approche de codage introduite depuis la version 8 , permettant d'écrire du code de manière déclarative 
-en se bansant sur :
+En Java, c'est une approche de codage introduite depuis la version 8 , permettant d'écrire du code de manière déclarative 
+en se basant sur :
 
 * des fonctions (via les lamdas)
 * des structures de données immuables 
