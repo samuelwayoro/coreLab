@@ -3,13 +3,12 @@ package corelab.structurededonnees.lestableaux;
 public class Cours1 {
 
 	public static void main(String[] args) {
-		/*
-		 * structure de données utilisé pour stocker des valeur de même type . ils ont
-		 * un dimension données lors de l'initialisation entre le signe [] , et se
-		 * déclare en respectant cette syntaxt : type [] nomVariable = new type
-		 * [dimension];
+		/***
+		 * Structure de données utilisée pour stocker des valeurs de même type. Ils ont
+		 * une dimension donnée lors de l'initialisation entre le signe [], et se
+		 * déclarent en respectant cette syntaxe : type[] nomVariable = new type [dimension];
 		 * 
-		 * nb : le tableau est constitué de cellules numéroté (indice) de 0 a la
+		 * NB : le tableau est constitué de cellules numérotées (indice) de 0 à la
 		 * dimension -1 ;
 		 */
 
@@ -29,7 +28,7 @@ public class Cours1 {
 		// il es aussi possible de déclarer un tableau contenant des objets , ou des
 		// références vers des objets :
 
-		// déclaration d'un tableau de StringBuffer de dimension 5 (c a d sensé stocker
+		// déclaration d'un tableau de StringBuffer de dimension 5 (c'est-à-dire pouvant stocker
 		// 5 references d'objets de type StringBuffer)
 		StringBuffer[] stringBuffTab = new StringBuffer[5];
 
