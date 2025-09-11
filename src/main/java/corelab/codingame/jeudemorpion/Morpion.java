@@ -8,7 +8,7 @@ import static corelab.codingame.jeudemorpion.StringConstants.SPACE;
  * qui représente le dammier sur lequel les joueurs selectionnent
  * les cellules dans lesquelles ils décident de jouer.
  *
- * l'affichage est amélioré grâce à la méthode toString() qui utilise la classe StringBuilder pour une meilleure concatenation
+ * L'affichage est amélioré grâce à la méthode toString() qui utilise la classe StringBuilder pour une meilleure concatenation
  */
 public class Morpion {
 
@@ -47,7 +47,7 @@ public class Morpion {
      * @param player
      * @param inputUser
      */
-    public void processInput(Player player, int inputUser) {
+    public void processInput(Player player, int inputUser) throws MorpionException {
 
         var row = (inputUser - 1) / 3;
         var column = (inputUser - 1) % 3;
@@ -57,6 +57,8 @@ public class Morpion {
                 grid[row][column] = 'x';
             else
                 grid[row][column] = 'o';
+        } else {
+            throw new MorpionException("Désolé! La case est déjà occupée , entrez un autre chiffre entre 1 et 9");
         }
 
     }
