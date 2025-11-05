@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesinterfacesfonctionnelles.consumer.model;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesinterfacesfonctionnelles.consumer.model;
 
 import java.util.function.Consumer;
 

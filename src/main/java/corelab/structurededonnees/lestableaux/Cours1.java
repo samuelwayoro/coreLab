@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lestableaux;
+package corelab.structures_de_donnees.lestableaux;
 
 public class Cours1 {
 

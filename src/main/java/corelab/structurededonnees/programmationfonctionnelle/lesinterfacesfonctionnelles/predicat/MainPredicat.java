@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesinterfacesfonctionnelles.predicat;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesinterfacesfonctionnelles.predicat;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

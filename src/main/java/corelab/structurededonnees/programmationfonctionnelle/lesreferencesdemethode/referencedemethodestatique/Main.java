@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesreferencesdemethode.referencedemethodestatique;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesreferencesdemethode.referencedemethodestatique;
 
 import java.util.Arrays;
 import java.util.List;

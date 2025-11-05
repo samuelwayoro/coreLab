@@ -1,4 +1,4 @@
-package corelab.structurededonnees.logging.avec_log4j2;
+package corelab.structures_de_donnees.logging.avec_log4j2;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

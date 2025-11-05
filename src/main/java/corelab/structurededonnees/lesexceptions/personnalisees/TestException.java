@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lesexceptions.personnalisees;
+package corelab.structures_de_donnees.lesexceptions.personnalisees;
 
 public class TestException {
 

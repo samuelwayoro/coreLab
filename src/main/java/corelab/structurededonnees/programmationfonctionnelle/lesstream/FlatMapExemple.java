@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesstream;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesstream;
 
 import java.util.Collection;
 import java.util.List;

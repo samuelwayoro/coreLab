@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesreferencesdemethode.model;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesreferencesdemethode.model;
 
 public class Person {
 	

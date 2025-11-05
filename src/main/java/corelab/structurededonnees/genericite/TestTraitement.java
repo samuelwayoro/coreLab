@@ -1,4 +1,4 @@
-package corelab.structurededonnees.genericite;
+package corelab.structures_de_donnees.genericite;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

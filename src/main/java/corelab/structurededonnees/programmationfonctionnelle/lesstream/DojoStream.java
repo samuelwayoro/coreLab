@@ -1,8 +1,7 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesstream;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesstream;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class DojoStream {

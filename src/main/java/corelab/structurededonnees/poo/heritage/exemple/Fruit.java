@@ -1,4 +1,4 @@
-package corelab.structurededonnees.poo.heritage.exemple;
+package corelab.structures_de_donnees.poo.heritage.exemple;
 
 import java.util.Objects;
 

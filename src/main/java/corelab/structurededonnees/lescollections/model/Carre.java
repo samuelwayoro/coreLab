@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lescollections.model;
+package corelab.structures_de_donnees.lescollections.model;
 
 public class Carre implements Comparable {
     private int cote;

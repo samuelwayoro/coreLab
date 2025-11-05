@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lescollections.leslistes;
+package corelab.structures_de_donnees.lescollections.leslistes;
 
 import java.util.ArrayList;
 import java.util.Iterator;

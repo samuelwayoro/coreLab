@@ -1,4 +1,4 @@
-package corelab.structurededonnees.testsunitaires.junit5.models;
+package corelab.structures_de_donnees.testsunitaires.junit5.models;
 
 import org.junit.jupiter.api.Test;
 

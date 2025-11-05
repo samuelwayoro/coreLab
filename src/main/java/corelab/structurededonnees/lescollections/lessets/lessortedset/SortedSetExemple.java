@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lescollections.lessets.lessortedset;
+package corelab.structures_de_donnees.lescollections.lessets.lessortedset;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

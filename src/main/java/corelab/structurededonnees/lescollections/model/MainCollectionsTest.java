@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lescollections.model;
+package corelab.structures_de_donnees.lescollections.model;
 
 import java.util.*;
 

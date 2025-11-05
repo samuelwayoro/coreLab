@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lescollections.lesmap.sortedMap.aveccomparator;
+package corelab.structures_de_donnees.lescollections.lesmap.sortedMap.aveccomparator;
 
 import java.util.Comparator;
 

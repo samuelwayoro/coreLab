@@ -1,4 +1,4 @@
-package corelab.structurededonnees.convertions;
+package corelab.structures_de_donnees.convertions;
 
 /***
  * permet de demontrer que la convertion d'un type objet String en un autre type

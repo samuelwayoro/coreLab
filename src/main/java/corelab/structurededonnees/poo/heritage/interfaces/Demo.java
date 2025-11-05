@@ -1,6 +1,6 @@
-package corelab.structurededonnees.poo.heritage.interfaces;
+package corelab.structures_de_donnees.poo.heritage.interfaces;
 
-import corelab.structurededonnees.poo.heritage.interfaces.model.*;
+import corelab.structures_de_donnees.poo.heritage.interfaces.model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lesconditions.ternaire;
+package corelab.structures_de_donnees.lesconditions.ternaire;
 
 import java.util.Scanner;
 

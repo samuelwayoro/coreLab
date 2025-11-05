@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lescollections.classesutilitaires.arraysetcollections.comparatoretcomparable;
+package corelab.structures_de_donnees.lescollections.classesutilitaires.arraysetcollections.comparatoretcomparable;
 
 public class Personne implements Comparable<ExempleComparable.Personne> {
 

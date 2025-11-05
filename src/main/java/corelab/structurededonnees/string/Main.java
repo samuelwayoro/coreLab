@@ -1,4 +1,4 @@
-package corelab.structurededonnees.string;
+package corelab.structures_de_donnees.string;
 
 import java.util.HashSet;
 

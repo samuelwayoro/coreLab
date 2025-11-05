@@ -1,4 +1,4 @@
-package corelab.structurededonnees.laclassestring;
+package corelab.structures_de_donnees.laclassestring;
 
 public class Main {
 

@@ -1,6 +1,6 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesreferencesdemethode.referenceaunemethodedinstancedunobjetparticulierexistant;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesreferencesdemethode.referenceaunemethodedinstancedunobjetparticulierexistant;
 
-import corelab.structurededonnees.programmationfonctionnelle.lesreferencesdemethode.model.Person;
+import corelab.structures_de_donnees.programmationfonctionnelle.lesreferencesdemethode.model.Person;
 
 /****
  * 		EXEMPLE D'UTILISATION D'UNE REFERENCE A UNE METHODE D'INSTANCE 

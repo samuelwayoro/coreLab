@@ -1,8 +1,8 @@
-package corelab.structurededonnees.enums;
+package corelab.structures_de_donnees.enums;
 
-import corelab.structurededonnees.enums.lesenums.Jour;
-import corelab.structurededonnees.enums.lesenums.PointsCardinaux;
-import corelab.structurededonnees.enums.lesenums.Sexe;
+import corelab.structures_de_donnees.enums.lesenums.Jour;
+import corelab.structures_de_donnees.enums.lesenums.PointsCardinaux;
+import corelab.structures_de_donnees.enums.lesenums.Sexe;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

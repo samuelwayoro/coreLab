@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lescollections.lessets.navigableset;
+package corelab.structures_de_donnees.lescollections.lessets.navigableset;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

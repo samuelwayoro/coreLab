@@ -1,4 +1,4 @@
-package corelab.structurededonnees.testsunitaires.junit5.lesmocks.models;
+package corelab.structures_de_donnees.testsunitaires.junit5.lesmocks.models;
 
 import java.util.Objects;
 

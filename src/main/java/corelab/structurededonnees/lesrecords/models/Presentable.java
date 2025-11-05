@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lesrecords.models;
+package corelab.structures_de_donnees.lesrecords.models;
 
 public interface Presentable {
 

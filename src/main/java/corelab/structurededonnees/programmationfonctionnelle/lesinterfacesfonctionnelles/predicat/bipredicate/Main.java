@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesinterfacesfonctionnelles.predicat.bipredicate;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesinterfacesfonctionnelles.predicat.bipredicate;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

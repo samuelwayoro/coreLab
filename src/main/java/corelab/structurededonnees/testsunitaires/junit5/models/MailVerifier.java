@@ -1,4 +1,4 @@
-package corelab.structurededonnees.testsunitaires.junit5.models;
+package corelab.structures_de_donnees.testsunitaires.junit5.models;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

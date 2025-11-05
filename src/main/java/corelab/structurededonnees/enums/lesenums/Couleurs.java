@@ -1,4 +1,4 @@
-package corelab.structurededonnees.enums.lesenums;
+package corelab.structures_de_donnees.enums.lesenums;
 
 public enum Couleurs {
     VERT("#196F3D"), ROUGE("#E74C3C"), JAUNE("#F7DC6F"), BLEU("#3498DB");

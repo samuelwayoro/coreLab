@@ -1,4 +1,4 @@
-package corelab.structurededonnees.genericite;
+package corelab.structures_de_donnees.genericite;
 
 /**
  * TripletTwo est une classe générique fille de la classe générique Couple<K,V>

@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lesconditions.switch_case;
+package corelab.structures_de_donnees.lesconditions.switch_case;
 
 public class Main {
 

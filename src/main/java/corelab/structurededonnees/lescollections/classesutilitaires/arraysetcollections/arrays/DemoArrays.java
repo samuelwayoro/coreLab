@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lescollections.classesutilitaires.arraysetcollections.arrays;
+package corelab.structures_de_donnees.lescollections.classesutilitaires.arraysetcollections.arrays;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

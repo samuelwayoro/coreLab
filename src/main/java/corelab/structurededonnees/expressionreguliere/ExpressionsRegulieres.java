@@ -1,4 +1,4 @@
-package corelab.structurededonnees.expressionreguliere;
+package corelab.structures_de_donnees.expressionreguliere;
 
 public class ExpressionsRegulieres {
 

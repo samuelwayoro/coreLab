@@ -1,4 +1,4 @@
-package corelab.structurededonnees.genericite;
+package corelab.structures_de_donnees.genericite;
 
 /**
  * Utilisation de type générique T1 et T2 emplacé après le nom de la class pour

@@ -1,4 +1,4 @@
-package corelab.structurededonnees.genericite;
+package corelab.structures_de_donnees.genericite;
 /***
  * Couplet est une classe générique fille de la classe Couple.
  * Elle utilise ici les paramètres K et V, car nous n'avons pas donné de type

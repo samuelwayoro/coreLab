@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesinterfacesfonctionnelles.consumer.biconsumer;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesinterfacesfonctionnelles.consumer.biconsumer;
 
 import java.util.function.BiConsumer;
 

@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesinterfacesfonctionnelles.function.bifunction;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesinterfacesfonctionnelles.function.bifunction;
 
 import java.util.function.BiFunction;
 

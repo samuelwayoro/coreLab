@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesinterfacesfonctionnelles.function.bifunction.binaryoperator;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesinterfacesfonctionnelles.function.bifunction.binaryoperator;
 
 import java.util.function.BinaryOperator;
 

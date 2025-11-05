@@ -1,4 +1,4 @@
-package corelab.structurededonnees.logging.avec_java_util_logging;
+package corelab.structures_de_donnees.logging.avec_java_util_logging;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

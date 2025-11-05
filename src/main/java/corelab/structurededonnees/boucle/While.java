@@ -1,4 +1,4 @@
-package corelab.structurededonnees.boucle;
+package corelab.structures_de_donnees.boucle;
 
 public class While {
 

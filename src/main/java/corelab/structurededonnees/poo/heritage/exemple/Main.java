@@ -1,4 +1,4 @@
-package corelab.structurededonnees.poo.heritage.exemple;
+package corelab.structures_de_donnees.poo.heritage.exemple;
 
 public class Main {
     public static void main(String[] args) {

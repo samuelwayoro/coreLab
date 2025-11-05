@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lescollections.lesQueues;
+package corelab.structures_de_donnees.lescollections.lesQueues;
 
 import java.util.Iterator;
 import java.util.PriorityQueue;

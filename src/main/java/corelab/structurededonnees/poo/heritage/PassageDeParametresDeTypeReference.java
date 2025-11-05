@@ -1,4 +1,4 @@
-package corelab.structurededonnees.poo.heritage;
+package corelab.structures_de_donnees.poo.heritage;
 
 public class PassageDeParametresDeTypeReference {
 

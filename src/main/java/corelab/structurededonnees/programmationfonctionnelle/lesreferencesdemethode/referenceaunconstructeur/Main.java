@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesreferencesdemethode.referenceaunconstructeur;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesreferencesdemethode.referenceaunconstructeur;
 
 import java.util.stream.Stream;
 

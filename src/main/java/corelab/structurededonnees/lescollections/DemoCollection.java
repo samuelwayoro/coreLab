@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lescollections;
+package corelab.structures_de_donnees.lescollections;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

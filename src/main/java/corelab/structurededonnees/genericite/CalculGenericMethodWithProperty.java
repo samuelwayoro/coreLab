@@ -1,4 +1,4 @@
-package corelab.structurededonnees.genericite;
+package corelab.structures_de_donnees.genericite;
 
 /**
  * La classe CalculGenericMethodWithProperty<U> est une classe générique avec un seul paramètre <U>

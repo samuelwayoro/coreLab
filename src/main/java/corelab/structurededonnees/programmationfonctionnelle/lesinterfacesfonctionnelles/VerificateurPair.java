@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesinterfacesfonctionnelles;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesinterfacesfonctionnelles;
 
 @FunctionalInterface
 public interface VerificateurPair {

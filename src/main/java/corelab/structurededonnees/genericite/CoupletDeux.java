@@ -1,4 +1,4 @@
-package corelab.structurededonnees.genericite;
+package corelab.structures_de_donnees.genericite;
 /**
  * la classe CoupletDeux quand a elle est une classe 
  * fille de la classe générique Couple . 

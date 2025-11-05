@@ -1,4 +1,4 @@
-package corelab.structurededonnees.poo.heritage.les_classes_scellees.models;
+package corelab.structures_de_donnees.poo.heritage.les_classes_scellees.models;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

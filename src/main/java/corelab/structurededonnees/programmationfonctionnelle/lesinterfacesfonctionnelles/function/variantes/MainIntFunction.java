@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesinterfacesfonctionnelles.function.variantes;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesinterfacesfonctionnelles.function.variantes;
 
 import java.util.Arrays;
 import java.util.function.IntFunction;

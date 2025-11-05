@@ -1,4 +1,4 @@
-package corelab.structurededonnees.genericite;
+package corelab.structures_de_donnees.genericite;
 
 public class ExempleOne<T> {
 	T valeur ; //utilisation du type <T> comme type de la propriété valeur 

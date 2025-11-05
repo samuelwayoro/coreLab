@@ -1,6 +1,6 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesinterfacesfonctionnelles.consumer;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesinterfacesfonctionnelles.consumer;
 
-import corelab.structurededonnees.programmationfonctionnelle.lesinterfacesfonctionnelles.consumer.model.Fichier;
+import corelab.structures_de_donnees.programmationfonctionnelle.lesinterfacesfonctionnelles.consumer.model.Fichier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

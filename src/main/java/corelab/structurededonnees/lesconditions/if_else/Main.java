@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lesconditions.if_else;
+package corelab.structures_de_donnees.lesconditions.if_else;
 
 public class Main {
 

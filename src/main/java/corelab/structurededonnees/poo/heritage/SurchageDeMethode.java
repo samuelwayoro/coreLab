@@ -1,4 +1,4 @@
-package corelab.structurededonnees.poo.heritage;
+package corelab.structures_de_donnees.poo.heritage;
 
 /*
  * la surchage est un procedé en poo dont l'objectif est de réecrire une méthode

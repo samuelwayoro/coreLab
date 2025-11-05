@@ -1,4 +1,4 @@
-package corelab.structurededonnees.convertions;
+package corelab.structures_de_donnees.convertions;
 
 public class ConvertionImplicite {
 

@@ -1,4 +1,4 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesstream;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesstream;
 
 import java.io.IOException;
 import java.nio.file.Files;

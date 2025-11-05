@@ -1,4 +1,4 @@
-package corelab.structurededonnees.poo.heritage.classeabstraite;
+package corelab.structures_de_donnees.poo.heritage.classeabstraite;
 
 public class Chien extends Animal {
 

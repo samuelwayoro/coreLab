@@ -1,6 +1,6 @@
-package corelab.structurededonnees.programmationfonctionnelle.lesreferencesdemethode.referenceaunemethodedinstancedunobjetarbitraire;
+package corelab.structures_de_donnees.programmationfonctionnelle.lesreferencesdemethode.referenceaunemethodedinstancedunobjetarbitraire;
 
-import corelab.structurededonnees.programmationfonctionnelle.lesreferencesdemethode.model.Person;
+import corelab.structures_de_donnees.programmationfonctionnelle.lesreferencesdemethode.model.Person;
 
 import java.util.Arrays;
 import java.util.List;

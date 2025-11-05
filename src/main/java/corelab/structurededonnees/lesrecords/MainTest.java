@@ -1,8 +1,8 @@
-package corelab.structurededonnees.lesrecords;
+package corelab.structures_de_donnees.lesrecords;
 
-import corelab.structurededonnees.lesrecords.models.Circle;
-import corelab.structurededonnees.lesrecords.models.Point;
-import corelab.structurededonnees.lesrecords.models.Rectangle;
+import corelab.structures_de_donnees.lesrecords.models.Circle;
+import corelab.structures_de_donnees.lesrecords.models.Point;
+import corelab.structures_de_donnees.lesrecords.models.Rectangle;
 
 public class MainTest {
     public static void main(String[] args) {

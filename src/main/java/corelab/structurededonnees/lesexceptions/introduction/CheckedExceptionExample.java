@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lesexceptions.introduction;
+package corelab.structures_de_donnees.lesexceptions.introduction;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

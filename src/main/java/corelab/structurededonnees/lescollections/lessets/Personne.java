@@ -1,4 +1,4 @@
-package corelab.structurededonnees.lescollections.lessets;
+package corelab.structures_de_donnees.lescollections.lessets;
 
 import java.util.Objects;
 

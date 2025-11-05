@@ -1,4 +1,4 @@
-package corelab.structurededonnees.date;
+package corelab.structures_de_donnees.date;
 
 import java.time.*;
 import java.util.Calendar;
