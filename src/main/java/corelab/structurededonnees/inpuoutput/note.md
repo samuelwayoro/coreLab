@@ -3,6 +3,65 @@
 En java, le concept Input/Output désigne toutes les opérations de <font color=red>lecture (Input)</font> et <font color=red>
 d'écriture (output)</font> entre un programme et le monde extérieur. Que ce soit le clavier, l'écran, un fichier, ou même le réseau.
 
+🌞 RAPPEL : 
+
+En anglais, “stream” veut dire “courant” ou “flux”.
+Dans Java, un Stream représente un flux de données qui circule entre ton programme et une source ou une destination.
+
+🔹 Ce flux peut aller dans les deux sens :
+
+| Type de flux     | Direction                        | Rôle                |
+| ---------------- | -------------------------------- | ------------------- |
+| **InputStream**  | De l’extérieur vers le programme | Lecture de données  |
+| **OutputStream** | Du programme vers l’extérieur    | Écriture de données |
+
+Quelques classes importantes avec “Stream”
+
+Voici un petit tour d’horizon :
+
+| Classe                                         | Type                     | Description                                                  |
+| ---------------------------------------------- | ------------------------ | ------------------------------------------------------------ |
+| `FileInputStream`                              | Entrée binaire           | Lire un fichier non textuel (image, audio, etc.)             |
+| `FileOutputStream`                             | Sortie binaire           | Écrire dans un fichier binaire                               |
+| `BufferedInputStream` / `BufferedOutputStream` | Entrée / sortie binaire  | Ajoute un tampon (buffer) pour accélérer la lecture/écriture |
+| `ObjectInputStream` / `ObjectOutputStream`     | Entrée / sortie d’objets | Lire ou écrire des objets Java entiers                       |
+| `InputStreamReader` / `OutputStreamWriter`     | Adaptateurs              | Convertissent un flux binaire ↔️ flux texte                  |
+
+Les flux se connectent entre eux (enchaînement)
+
+💡 En Java, tu peux combiner plusieurs flux pour ajouter des fonctionnalités.
+
+Exemple :
+
+        ObjectOutputStream out =
+            new ObjectOutputStream(
+                new BufferedOutputStream(
+                    new FileOutputStream("data.dat")
+                )
+            );
+
+👉 Ici :
+
+FileOutputStream : écrit dans le fichier,
+
+BufferedOutputStream : ajoute un tampon (meilleure performance),
+
+ObjectOutputStream : permet d’écrire des objets Java.
+
+C’est un peu comme empiler des “tuyaux” les uns sur les autres pour ajouter des filtres ou des fonctions supplémentaires.
+
+🧠 En résumé
+
+| Mot-clé             | Signification               | Rôle                                                           |
+| ------------------- | --------------------------- | -------------------------------------------------------------- |
+| **Stream**          | Flux (données en mouvement) | Canal entre le programme et un support (fichier, réseau, etc.) |
+| **InputStream**     | Flux entrant                | Lecture de données                                             |
+| **OutputStream**    | Flux sortant                | Écriture de données                                            |
+| **Reader / Writer** | Flux de caractères          | Lecture / écriture de texte                                    |
+| **Buffered**        | Tampon mémoire              | Accélère le traitement                                         |
+| **Object**          | Sérialisation               | Sauvegarde / lecture d’objets Java                             |
+
+
 ---
 
 🔥 <font color=red> <b> Les bases - Entrée / Sortie standard (console) </b> </font>
@@ -170,4 +229,45 @@ Pour cela, Java propose plusieurs classes :
 - Avec BufferWriter, l'écriture se fait sans saut de ligne alors, on utilise .newLine() 
 - BufferWriter est plus rapide PrintWriter pour les grandes quantités de texte.
 
+---
 
+🔥 <font color=red> <b> Lecture / Ecriture binaire  </b> </font>
+
+▶ <b>Principe </b>
+
+Les fichiers binaires ne contiennent pas de texte lisible, mais des octets (0 et 1).
+Exemple : images, fichiers PDF, fichiers audios, fichiers exécutables.
+
+En Java, on utilise des flux d'octets : 
+* <b>InputStream pour lire 
+* OutputStream pour écrire </b>
+
+Les classes de base : 
+* <b> FileInputStream : lecture binaire dans un fichier 
+* FileOutPutStream : écriture binaire dans un fichier.</b>
+
+<b><font color=green>Exemple : CopieBiniare.class</font></b>
+
+💡<b>Pour de grands fichiers, on doit lire par blocs d'octets exemple : 1024 Octets pour être plus rapide : </b>
+
+<b><font color=green>Exemple : CopieBiniare.class - méthode largeCopy() </font></b>
+
+---
+🔥 <font color=red> <b> Lecture / Ecriture d'objets (sérialisation / déserialisation)  </b> </font>
+
+🟥 <b> Principe</b> 
+
+Ici, on veut sauvegarder un objet java dans un fichier (exemple : l'instance d'une classe), et pouvoir le relire plus 
+tard avec toutes ses données. 
+
+Java offre pour cela :
+
+* <b>ObjectOutputStream</b> : pour écrire des objets 
+* <b>ObjectinputStream</b> : pour lire des objets. 
+
+⚠️ <b> Mais attention pour celà l'objet doit être sérialisable, c'est-à-dire qu'il implémente l'interface Serializable.</b>
+
+<b><font color = green> Exemple : 
+
+ * Ecriture : voir class ExempleEcritureObjet dans le package serialisation 
+ * Lecture : voir class ExempleLectureObjet dans le package serialisation </font></b>

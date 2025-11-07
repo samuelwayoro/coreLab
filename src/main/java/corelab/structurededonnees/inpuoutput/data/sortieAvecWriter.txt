@@ -1,0 +1,3 @@
+Bonjour le monde !
+Ceci est une ligne écrite dans un fichier 
+java facilite l'écriture de texte.
