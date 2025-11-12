@@ -1,4 +1,4 @@
-package corelab.structurededonnees.inpuoutput.serialisation;
+package corelab.structurededonnees.inputoutput.serialisation;
 
 import java.io.Serializable;
 

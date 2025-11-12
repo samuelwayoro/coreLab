@@ -15,7 +15,7 @@ Dans Java, un Stream représente un flux de données qui circule entre ton progr
 | **InputStream**  | De l’extérieur vers le programme | Lecture de données  |
 | **OutputStream** | Du programme vers l’extérieur    | Écriture de données |
 
-Quelques classes importantes avec “Stream”
+🔹 Quelques classes importantes avec “Stream”
 
 Voici un petit tour d’horizon :
 
@@ -42,11 +42,11 @@ Exemple :
 
 👉 Ici :
 
-FileOutputStream : écrit dans le fichier,
+- FileOutputStream :<font color=red> écrit dans le fichier,</font>
 
-BufferedOutputStream : ajoute un tampon (meilleure performance),
+- BufferedOutputStream : <font color=red> ajoute un tampon (meilleure performance),</font>
 
-ObjectOutputStream : permet d’écrire des objets Java.
+- ObjectOutputStream : <font color=red> permet d’écrire des objets Java.</font>
 
 C’est un peu comme empiler des “tuyaux” les uns sur les autres pour ajouter des filtres ou des fonctions supplémentaires.
 
@@ -263,11 +263,14 @@ tard avec toutes ses données.
 Java offre pour cela :
 
 * <b>ObjectOutputStream</b> : pour écrire des objets 
-* <b>ObjectinputStream</b> : pour lire des objets. 
+* <b>ObjectInputStream</b> : pour lire des objets. 
 
-⚠️ <b> Mais attention pour celà l'objet doit être sérialisable, c'est-à-dire qu'il implémente l'interface Serializable.</b>
+⚠️ <b><font color=red> Mais attention pour celà l'objet doit être sérialisable, c'est-à-dire qu'il implémente 
+l'interface Serializable.</font></b>
 
 <b><font color = green> Exemple : 
 
  * Ecriture : voir class ExempleEcritureObjet dans le package serialisation 
  * Lecture : voir class ExempleLectureObjet dans le package serialisation </font></b>
+
+---

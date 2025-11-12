@@ -1,9 +1,8 @@
-package corelab.structurededonnees.inpuoutput.serialisation;
+package corelab.structurededonnees.inputoutput.serialisation;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;

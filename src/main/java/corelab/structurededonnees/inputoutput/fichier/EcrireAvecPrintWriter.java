@@ -1,4 +1,4 @@
-package corelab.structurededonnees.inpuoutput.fichier;
+package corelab.structurededonnees.inputoutput.fichier;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

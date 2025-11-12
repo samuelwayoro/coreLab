@@ -1,4 +1,4 @@
-package corelab.structurededonnees.inpuoutput.serialisation;
+package corelab.structurededonnees.inputoutput.serialisation;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

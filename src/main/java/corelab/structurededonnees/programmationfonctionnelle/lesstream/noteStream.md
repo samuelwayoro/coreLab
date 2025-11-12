@@ -8,7 +8,7 @@ de manière optimisée.
 <br/>
 <br/>
 <b>
-L'API Stream facilite l'exécution des données de des données de manière séquentielle ou parallèle.
+L'API Stream facilite l'exécution des données de manière séquentielle ou parallèle.
 Les Streams permettent de laisser le développeur se concentrer sur les données et les traitements réalisés sur cet 
 ensemble de données sans avoir à se préoccuper de détails techniques de bas niveau comme l'itération sur chacun des 
 éléments ou la possibilité d'exécuter ces traitements de manière parallèle. <br/>
@@ -23,15 +23,15 @@ Un stream en java est une suite d'éléments, une sequence d'élément sur lesqu
 Une définition simple d'un Stream pourrait être : « l'application d'un ensemble d'opérations sur une séquence d'éléments
 issus d'une source dans le but d'obtenir un résultat ».
 
-Il existe deux catégories d'opérations :
+<font color=red> Il existe deux catégories d'opérations : </font>
 
-Un stream se compose d'opérations intermédiaires et d'opérations terminales.
+Un stream se compose <font color=yellow> d'opérations intermédiaires</font> et <font color=yellow>d'opérations terminales.</font>
 
-Les opérations intermédiaires prennent en entrée un stream et renvoi un stream.</b>
+<font color=red>Les opérations intermédiaires prennent en entrée un stream et renvoi un stream.</b></font>
 
 * EXEMPLE : filter , map , sorted , distinct.
 
-<b>Les opérations terminales produisent un résultat ou un "side-effect". </b>
+<b><font color=red>Les opérations terminales produisent un résultat ou un "side-effect". </b></font>
 
 * EXEMPLE : collect , forEach , reduce.
 
@@ -59,9 +59,6 @@ Grâce à l'API Stream, il est alors possible de réaliser ce genre d'opération
                         .count();
             System.out.println(somme);
 
-Copie limitée, attention la copie privée des cours est protégée par le droit d'auteur.
-
-
 
 - <font color=red>Les opérations Intermédiaires : </font> elles peuvent être enchaînées, car elles renvoient un Stream
   Dans l'exemple ci-dessus, la méthode filter est une méthode intermédiaire qui retourne un Stream d'éléments filtrés
@@ -73,8 +70,7 @@ ou pas de valeur) et ferme le Stream à la fin de leur exécution.
     - Dans l'exemple ci-dessus, la méthode count est une méthode terminale qui retourne un entier (le nombre d'éléments restants) 
     et non un Stream qui ne serait pas vraiment utilisable en tant que telle pour l'utilisation des données traitées.
 
-
-
+      
 #### 🔥 <font color =red> IMPORTANT </font>
 
 Il faudrait aussi noter que l'api stream obéit au pattern : <b> map -> filter -> reduce </b>.

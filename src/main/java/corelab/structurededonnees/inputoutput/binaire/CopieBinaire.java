@@ -1,8 +1,9 @@
-package corelab.structurededonnees.inpuoutput.binaire;
+package corelab.structurededonnees.inputoutput.binaire;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -77,8 +78,10 @@ public class CopieBinaire {
         byte[] buffer = new byte[1024];
         int nbOctetLus;
 
+        File file = new File(source);
+
         try (
-                FileInputStream inputStream = new FileInputStream(source);
+                FileInputStream inputStream = new FileInputStream(file.getName());
                 FileOutputStream outputStream = new FileOutputStream(destination);
         ) {
 
